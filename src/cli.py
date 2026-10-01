@@ -197,5 +197,46 @@ def schedule():
     asyncio.run(start_scheduler_blocking())
 
 
+@cli.command("audit-bajas")
+def audit_bajas_cmd(
+    all_props: bool = typer.Option(
+        False, "--all", "-a", help="Auditar el 100% de las propiedades activas de la base de datos"
+    ),
+    only_inactivas: bool = typer.Option(
+        False, "--only-inactivas", help="Solo auditar propiedades marcadas como inactivas"
+    ),
+    sample_activas: int = typer.Option(
+        20, "--sample-activas", "-n", help="Cantidad de propiedades activas a auditar como muestra (si no se usa --all)"
+    ),
+    fix: bool = typer.Option(
+        False, "--fix", help="Actualizar automáticamente en Supabase las bajas detectadas"
+    ),
+    workers: int = typer.Option(
+        4, "--workers", "-w", help="Cantidad de hilos concurrentes (default: 4)"
+    ),
+    delay: float = typer.Option(
+        0.25, "--delay", "-d", help="Pausa entre peticiones por hilo en segundos (default: 0.25)"
+    ),
+    no_cache: bool = typer.Option(
+        False, "--no-cache", help="Ignorar la caché de propiedades ya verificadas vivas"
+    ),
+):
+    """Audita y controla si las propiedades se están dando de baja correctamente en Argenprop vs Supabase."""
+    from scripts.audit_bajas import run_audit
+
+    run_audit(
+        all_activas=all_props,
+        sample_activas=sample_activas,
+        only_inactivas=only_inactivas,
+        auto_fix=fix,
+        workers=workers,
+        delay=delay,
+        no_cache=no_cache,
+    )
+
+
+
+
 if __name__ == "__main__":
     cli()
+

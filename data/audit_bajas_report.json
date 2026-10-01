@@ -1,0 +1,3280 @@
+{
+  "timestamp": "2026-10-01T13:24:45.861767+00:00",
+  "total_activas_analizadas": 3332,
+  "vivas_confirmadas": 3005,
+  "bajas_detectadas_count": 327,
+  "falsos_positivos_count": 0,
+  "auto_fix_aplicado": true,
+  "bajas_detectadas": [
+    {
+      "id": 4127,
+      "argenprop_id": "19459725",
+      "titulo": "Lote en venta de 336m2 ubicado en barrio",
+      "precio": 26000.0,
+      "moneda": "USD",
+      "inmobiliaria": "LOGROS Servicios Inmobiliarios",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--19459725"
+    },
+    {
+      "id": 4143,
+      "argenprop_id": "20237183",
+      "titulo": "Local 183m2 en alquiler",
+      "precio": 2100000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "KW Salta",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20237183"
+    },
+    {
+      "id": 4144,
+      "argenprop_id": "20237189",
+      "titulo": "Local 183m2 en alquiler",
+      "precio": 2100000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "KW Salta",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20237189"
+    },
+    {
+      "id": 4179,
+      "argenprop_id": "20301478",
+      "titulo": "Casa en venta sobre avenida entre rios m",
+      "precio": 165000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301478"
+    },
+    {
+      "id": 4181,
+      "argenprop_id": "20301481",
+      "titulo": "Monoambiente venta zona centro 34 m2",
+      "precio": 60000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301481"
+    },
+    {
+      "id": 4180,
+      "argenprop_id": "20301479",
+      "titulo": "Monoambiente en alquiler macrocentro",
+      "precio": 500000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301479"
+    },
+    {
+      "id": 4182,
+      "argenprop_id": "20301482",
+      "titulo": "Monoambiente/ oficina venta c/cochera ma",
+      "precio": 65000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301482"
+    },
+    {
+      "id": 4183,
+      "argenprop_id": "20301484",
+      "titulo": "Terreno en venta en retoños de colón rut",
+      "precio": 12000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301484"
+    },
+    {
+      "id": 4185,
+      "argenprop_id": "20301486",
+      "titulo": "Casa en alquiler ideal oficinas tres cer",
+      "precio": 2000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301486"
+    },
+    {
+      "id": 4184,
+      "argenprop_id": "20301485",
+      "titulo": "Departamento venta en macrocentro apto c",
+      "precio": 62000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20301485"
+    },
+    {
+      "id": 4186,
+      "argenprop_id": "20303082",
+      "titulo": "Casa 8 dormitorios venta zona centro apt",
+      "precio": 400000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303082"
+    },
+    {
+      "id": 4188,
+      "argenprop_id": "20303083",
+      "titulo": "Departamento 2 dormitorios venta macroce",
+      "precio": 129000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303083"
+    },
+    {
+      "id": 4190,
+      "argenprop_id": "20303088",
+      "titulo": "Terreno venta san lorenzo 2150m2",
+      "precio": 175000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303088"
+    },
+    {
+      "id": 4189,
+      "argenprop_id": "20303087",
+      "titulo": "Terrenos en venta pueblo de cafayate sal",
+      "precio": 15000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303087"
+    },
+    {
+      "id": 4191,
+      "argenprop_id": "20303089",
+      "titulo": "Terreno venta - dique cabra corral - la ",
+      "precio": 49500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303089"
+    },
+    {
+      "id": 4192,
+      "argenprop_id": "20303090",
+      "titulo": "Campo venta 23 hectareas rp 21 cerrillos",
+      "precio": 885000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303090"
+    },
+    {
+      "id": 4194,
+      "argenprop_id": "20303092",
+      "titulo": "Terreno en dique cabra corral - barrio s",
+      "precio": 53520.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303092"
+    },
+    {
+      "id": 4193,
+      "argenprop_id": "20321447",
+      "titulo": "Venta terreno la reserva de san lorenzo",
+      "precio": 110000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20321447"
+    },
+    {
+      "id": 4195,
+      "argenprop_id": "20303093",
+      "titulo": "Terreno en venta los zarzos san lorenzo",
+      "precio": 76000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303093"
+    },
+    {
+      "id": 4196,
+      "argenprop_id": "20303094",
+      "titulo": "Casa en venta club de campo valle escond",
+      "precio": 680000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303094"
+    },
+    {
+      "id": 4197,
+      "argenprop_id": "20303096",
+      "titulo": "Casa en venta grand bourg la alborada 4 ",
+      "precio": 350000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303096"
+    },
+    {
+      "id": 4198,
+      "argenprop_id": "20303097",
+      "titulo": "Terreno venta 700m2 la misión la caldera",
+      "precio": 15500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303097"
+    },
+    {
+      "id": 4199,
+      "argenprop_id": "20303098",
+      "titulo": "Casa venta 3 dormitorios av bolivia zona",
+      "precio": 120000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303098"
+    },
+    {
+      "id": 4200,
+      "argenprop_id": "20303099",
+      "titulo": "Galpon venta de 3300 m2 en embarcación",
+      "precio": 1500000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20303099"
+    },
+    {
+      "id": 4201,
+      "argenprop_id": "20305766",
+      "titulo": "Alquiler casa finca 4 dormitorio 6ha cam",
+      "precio": 1500.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20305766"
+    },
+    {
+      "id": 4202,
+      "argenprop_id": "20305768",
+      "titulo": "Venta terreno barrio santa ana frente en",
+      "precio": 34500.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20305768"
+    },
+    {
+      "id": 4203,
+      "argenprop_id": "20306013",
+      "titulo": "Casa 3 dormitorios c/local venta macroce",
+      "precio": 115000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20306013"
+    },
+    {
+      "id": 4207,
+      "argenprop_id": "20308619",
+      "titulo": "Casa a refaccionar venta macrocentro est",
+      "precio": 110000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20308619"
+    },
+    {
+      "id": 4208,
+      "argenprop_id": "20308632",
+      "titulo": "Casa 5 dormitorios venta zona macrocentr",
+      "precio": 315000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20308632"
+    },
+    {
+      "id": 4209,
+      "argenprop_id": "20308707",
+      "titulo": "Casa venta el tipal club de campo 3 dorm",
+      "precio": 420000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20308707"
+    },
+    {
+      "id": 4212,
+      "argenprop_id": "20310544",
+      "titulo": "Casa alquiler comercial av reyes catolic",
+      "precio": 1500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20310544"
+    },
+    {
+      "id": 4213,
+      "argenprop_id": "20310556",
+      "titulo": "Terreno venta los day 2525 mt2 el encon",
+      "precio": 65000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20310556"
+    },
+    {
+      "id": 4215,
+      "argenprop_id": "20311397",
+      "titulo": "Barrio la loma -casa -venta-zona oeste-s",
+      "precio": 68000.0,
+      "moneda": "USD",
+      "inmobiliaria": "GRUPO VESTA INMOBILIARIA",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20311397"
+    },
+    {
+      "id": 4217,
+      "argenprop_id": "20311971",
+      "titulo": "Terreno esquina venta cafayate vertiente",
+      "precio": 30000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20311971"
+    },
+    {
+      "id": 4226,
+      "argenprop_id": "20314841",
+      "titulo": "Casa en venta en b° san nicolas 4 dorm z",
+      "precio": 150000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20314841"
+    },
+    {
+      "id": 4222,
+      "argenprop_id": "20312908",
+      "titulo": "Venta casa valle escondido 6 dormitorios",
+      "precio": 650000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20312908"
+    },
+    {
+      "id": 4224,
+      "argenprop_id": "20313234",
+      "titulo": "Galpon / local en venta apto camiones ta",
+      "precio": 170000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20313234"
+    },
+    {
+      "id": 4227,
+      "argenprop_id": "20315364",
+      "titulo": "Casa venta tres cerritos apta credito 5 ",
+      "precio": 260000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20315364"
+    },
+    {
+      "id": 4228,
+      "argenprop_id": "20315414",
+      "titulo": "Casa 5 dormitorios en venta | zona sur, ",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "LOGROS Servicios Inmobiliarios",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20315414"
+    },
+    {
+      "id": 4230,
+      "argenprop_id": "20317466",
+      "titulo": "Venta terreno en b. grand bourg frente a",
+      "precio": 58000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20317466"
+    },
+    {
+      "id": 4235,
+      "argenprop_id": "20319218",
+      "titulo": "Departamento 3 dormitorios venta macroce",
+      "precio": 49900.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20319218"
+    },
+    {
+      "id": 4236,
+      "argenprop_id": "20319221",
+      "titulo": "Terreno en venta club de campo ojimoro z",
+      "precio": 42000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20319221"
+    },
+    {
+      "id": 4237,
+      "argenprop_id": "20319224",
+      "titulo": "Galpon venta macrocentro a estrenar",
+      "precio": 370000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20319224"
+    },
+    {
+      "id": 4238,
+      "argenprop_id": "20321442",
+      "titulo": "Alquiler 3 dorm condominio trinidad san ",
+      "precio": 2000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20321442"
+    },
+    {
+      "id": 4239,
+      "argenprop_id": "20321444",
+      "titulo": "Venta terreno 1095 m2 en las vertientes,",
+      "precio": 21000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20321444"
+    },
+    {
+      "id": 4240,
+      "argenprop_id": "20321445",
+      "titulo": "Venta departamento microcentro 4 dorm co",
+      "precio": 245000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20321445"
+    },
+    {
+      "id": 4241,
+      "argenprop_id": "20321452",
+      "titulo": "Alquiler oficina con cochera microcentro",
+      "precio": 900.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20321452"
+    },
+    {
+      "id": 4243,
+      "argenprop_id": "20322367",
+      "titulo": "Terreno venta 550m2 vaqueros urbanizacio",
+      "precio": 34000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20322367"
+    },
+    {
+      "id": 4244,
+      "argenprop_id": "20322783",
+      "titulo": "Alquiler local comercial a la calle macr",
+      "precio": 1100000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20322783"
+    },
+    {
+      "id": 4247,
+      "argenprop_id": "20323006",
+      "titulo": "Venta departamento 1 habitacion - zona m",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20323006"
+    },
+    {
+      "id": 4248,
+      "argenprop_id": "20324635",
+      "titulo": "Casa en venta macrocentro 4 dormitorios",
+      "precio": 77000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20324635"
+    },
+    {
+      "id": 4245,
+      "argenprop_id": "20322867",
+      "titulo": "Casa 4 dormitorios venta o permuta zona ",
+      "precio": 120000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20322867"
+    },
+    {
+      "id": 4251,
+      "argenprop_id": "20325657",
+      "titulo": "Departamento en venta macrocentro mitre ",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20325657"
+    },
+    {
+      "id": 4253,
+      "argenprop_id": "20326503",
+      "titulo": "Venta casa san lorenzo chico 3 dorm apta",
+      "precio": 360000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20326503"
+    },
+    {
+      "id": 4255,
+      "argenprop_id": "20327209",
+      "titulo": "Casa venta sobre avenida autodromo apta ",
+      "precio": 115000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327209"
+    },
+    {
+      "id": 4256,
+      "argenprop_id": "20327210",
+      "titulo": "Cabañas en venta vaqueros inversion apto",
+      "precio": 155000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327210"
+    },
+    {
+      "id": 4257,
+      "argenprop_id": "20327212",
+      "titulo": "Casa 3 dormitorios venta el mollar ii rp",
+      "precio": 95000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327212"
+    },
+    {
+      "id": 4258,
+      "argenprop_id": "20327213",
+      "titulo": "Duplex 2 dorm venta estacion alvarado zo",
+      "precio": 95000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327213"
+    },
+    {
+      "id": 4259,
+      "argenprop_id": "20327214",
+      "titulo": "Monoambiente en venta macrocentro",
+      "precio": 75000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327214"
+    },
+    {
+      "id": 4260,
+      "argenprop_id": "20327215",
+      "titulo": "Casa en venta en ampliacion el mollar ii",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327215"
+    },
+    {
+      "id": 4261,
+      "argenprop_id": "20327216",
+      "titulo": "Terreno venta praderas de san lorenzo 16",
+      "precio": 159000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327216"
+    },
+    {
+      "id": 4262,
+      "argenprop_id": "20327218",
+      "titulo": "Casa venta eko distrito cerrillos c/coch",
+      "precio": 85000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327218"
+    },
+    {
+      "id": 4266,
+      "argenprop_id": "20327872",
+      "titulo": "Terreno en venta en la arbolada - circun",
+      "precio": 67000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327872"
+    },
+    {
+      "id": 4264,
+      "argenprop_id": "20327220",
+      "titulo": "Local - oficina comercial y depositos",
+      "precio": 100000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327220"
+    },
+    {
+      "id": 4263,
+      "argenprop_id": "20327219",
+      "titulo": "Casa venta eko distrito cerrillos 2 dorm",
+      "precio": 85000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327219"
+    },
+    {
+      "id": 4267,
+      "argenprop_id": "20327873",
+      "titulo": "Terreno venta ciudad oeste san lorenzo c",
+      "precio": 110000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20327873"
+    },
+    {
+      "id": 4269,
+      "argenprop_id": "20328322",
+      "titulo": "Monoambiente venta maipu al 1000 macroce",
+      "precio": 51000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20328322"
+    },
+    {
+      "id": 4270,
+      "argenprop_id": "20328335",
+      "titulo": "Venta de casa en el tipal, 4 dormitorios",
+      "precio": 405000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20328335"
+    },
+    {
+      "id": 4268,
+      "argenprop_id": "20328140",
+      "titulo": "Casa en venta o permuta cafayate con pil",
+      "precio": 226000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20328140"
+    },
+    {
+      "id": 4275,
+      "argenprop_id": "20329687",
+      "titulo": "Alquiler casa san lorenzo chico 3 dorm y",
+      "precio": 2000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20329687"
+    },
+    {
+      "id": 4278,
+      "argenprop_id": "20332300",
+      "titulo": "Departamento venta con cochera 3 dorm zo",
+      "precio": 50000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20332300"
+    },
+    {
+      "id": 4277,
+      "argenprop_id": "20332299",
+      "titulo": "Casa a refaccionar 4 dormitorios venta m",
+      "precio": 75000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20332299"
+    },
+    {
+      "id": 4280,
+      "argenprop_id": "20332497",
+      "titulo": "Local en alquiler",
+      "precio": 2300000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "LUCIO LOPEZ FLEMING INMOBILIARIA",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20332497"
+    },
+    {
+      "id": 4283,
+      "argenprop_id": "20333905",
+      "titulo": "Terreno venta potreros de la caldera 250",
+      "precio": 20000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333905"
+    },
+    {
+      "id": 4282,
+      "argenprop_id": "20333904",
+      "titulo": "Casa 2 dorm retoños de colon rp 24 camin",
+      "precio": 60000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333904"
+    },
+    {
+      "id": 4284,
+      "argenprop_id": "20333906",
+      "titulo": "Departamento 1 dormitorio venta zona sho",
+      "precio": 80000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333906"
+    },
+    {
+      "id": 4285,
+      "argenprop_id": "20333907",
+      "titulo": "Departamento venta parque belgrano 3 dor",
+      "precio": 66000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333907"
+    },
+    {
+      "id": 4286,
+      "argenprop_id": "20333910",
+      "titulo": "Casa venta macrocentro 5 dormitorios",
+      "precio": 85000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333910"
+    },
+    {
+      "id": 4287,
+      "argenprop_id": "20333911",
+      "titulo": "Departamento venta tres cerritos 3 dormi",
+      "precio": 130000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333911"
+    },
+    {
+      "id": 4290,
+      "argenprop_id": "20333917",
+      "titulo": "Locales comerciales en venta en macrocen",
+      "precio": 410000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333917"
+    },
+    {
+      "id": 4288,
+      "argenprop_id": "20333912",
+      "titulo": "Casa venta frente alto noa shopping apta",
+      "precio": 345000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333912"
+    },
+    {
+      "id": 4289,
+      "argenprop_id": "20333913",
+      "titulo": "Departamento venta complejo cosmopol mac",
+      "precio": 140000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333913"
+    },
+    {
+      "id": 4291,
+      "argenprop_id": "20333919",
+      "titulo": "Terreno venta b° morosini zona sur",
+      "precio": 35000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20333919"
+    },
+    {
+      "id": 4295,
+      "argenprop_id": "20336502",
+      "titulo": "Venta terreno 408m sendas ur.",
+      "precio": 11000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20336502"
+    },
+    {
+      "id": 4293,
+      "argenprop_id": "20336500",
+      "titulo": "Venta 22 hectareas chicoana ideal para d",
+      "precio": 350000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20336500"
+    },
+    {
+      "id": 4292,
+      "argenprop_id": "20336499",
+      "titulo": "Venta oficina de 55 m2 frente al popeye ",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20336499"
+    },
+    {
+      "id": 4294,
+      "argenprop_id": "20336501",
+      "titulo": "Alquiler galpon-local comercial macrocen",
+      "precio": 2500000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20336501"
+    },
+    {
+      "id": 4296,
+      "argenprop_id": "20336503",
+      "titulo": "Venta terreno 40om sendas ur.",
+      "precio": 11000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20336503"
+    },
+    {
+      "id": 4297,
+      "argenprop_id": "20336505",
+      "titulo": "Venta terreno 406m sendas ur.",
+      "precio": 11000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20336505"
+    },
+    {
+      "id": 4299,
+      "argenprop_id": "20338542",
+      "titulo": "Casa en venta barrio autódromo con garag",
+      "precio": 130000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20338542"
+    },
+    {
+      "id": 4302,
+      "argenprop_id": "20339631",
+      "titulo": "Departamento alquiler 3 dorm zona sur el",
+      "precio": 550000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20339631"
+    },
+    {
+      "id": 4301,
+      "argenprop_id": "20354357",
+      "titulo": "Terreno venta dique cabra corral 1 hecta",
+      "precio": 55000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354357"
+    },
+    {
+      "id": 4304,
+      "argenprop_id": "20340220",
+      "titulo": "Departamento barrio juan pablo ii apto c",
+      "precio": 45000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20340220"
+    },
+    {
+      "id": 4305,
+      "argenprop_id": "20340439",
+      "titulo": "Terreno venta zona sur la jorgelina",
+      "precio": 26000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20340439"
+    },
+    {
+      "id": 4308,
+      "argenprop_id": "20341017",
+      "titulo": "Terreno venta a metros ruta 26 46o m2 pl",
+      "precio": 27000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20341017"
+    },
+    {
+      "id": 4310,
+      "argenprop_id": "20341301",
+      "titulo": "Galpon en venta barrio autodromo",
+      "precio": 255000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20341301"
+    },
+    {
+      "id": 4311,
+      "argenprop_id": "20341687",
+      "titulo": "Departamento 1 dormitorio venta zona cen",
+      "precio": 67000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20341687"
+    },
+    {
+      "id": 4313,
+      "argenprop_id": "20352353",
+      "titulo": "Casa 2 dorm venta retoños de colon en co",
+      "precio": 36000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20352353"
+    },
+    {
+      "id": 4314,
+      "argenprop_id": "20352358",
+      "titulo": "Casa 1 dormitorios venta la calderilla s",
+      "precio": 30000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20352358"
+    },
+    {
+      "id": 4315,
+      "argenprop_id": "20352359",
+      "titulo": "Terreno venta loteo don miguel zona sur ",
+      "precio": 20000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20352359"
+    },
+    {
+      "id": 4316,
+      "argenprop_id": "20352360",
+      "titulo": "Departamento venta macrocentro apto cred",
+      "precio": 69000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20352360"
+    },
+    {
+      "id": 4317,
+      "argenprop_id": "20353239",
+      "titulo": "Venta terreno la arbolada",
+      "precio": 69500.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20353239"
+    },
+    {
+      "id": 4319,
+      "argenprop_id": "20356903",
+      "titulo": "Venta terreno en vertientes eco pueblo v",
+      "precio": 28000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20356903"
+    },
+    {
+      "id": 4320,
+      "argenprop_id": "20354330",
+      "titulo": "Casa en venta en san lorenzo apta credit",
+      "precio": 250000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354330"
+    },
+    {
+      "id": 4321,
+      "argenprop_id": "20354331",
+      "titulo": "Casa en venta en madero vistas san loren",
+      "precio": 240000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354331"
+    },
+    {
+      "id": 4322,
+      "argenprop_id": "20354332",
+      "titulo": "Casa 4 dormitorios venta tres cerritos c",
+      "precio": 370000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354332"
+    },
+    {
+      "id": 4323,
+      "argenprop_id": "20354333",
+      "titulo": "Casa venta o permuta en cafayate 3 dormi",
+      "precio": 60000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354333"
+    },
+    {
+      "id": 4324,
+      "argenprop_id": "20354335",
+      "titulo": "Casa 3 dorm venta b° ferroviario a recic",
+      "precio": 85000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354335"
+    },
+    {
+      "id": 4326,
+      "argenprop_id": "20354337",
+      "titulo": "Casa 3 dormitorios venta cafayate con co",
+      "precio": 80000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354337"
+    },
+    {
+      "id": 4328,
+      "argenprop_id": "20354340",
+      "titulo": "Casa 3 dorm venta club de campo el tipal",
+      "precio": 485000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354340"
+    },
+    {
+      "id": 4327,
+      "argenprop_id": "20354338",
+      "titulo": "Casa alquiler con cabaña en san lorenzo",
+      "precio": 2500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354338"
+    },
+    {
+      "id": 4330,
+      "argenprop_id": "20354343",
+      "titulo": "Terreno venta proyeccion comercial 4 hec",
+      "precio": 110000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354343"
+    },
+    {
+      "id": 4329,
+      "argenprop_id": "20354342",
+      "titulo": "Casa en venta barrio san carlos zona sur",
+      "precio": 125000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354342"
+    },
+    {
+      "id": 4332,
+      "argenprop_id": "20354345",
+      "titulo": "Casa 3 dormitorios venta macrocentro",
+      "precio": 220000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354345"
+    },
+    {
+      "id": 4331,
+      "argenprop_id": "20354344",
+      "titulo": "Hotel en venta tres cerritos inversion",
+      "precio": 430000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354344"
+    },
+    {
+      "id": 4334,
+      "argenprop_id": "20354348",
+      "titulo": "Terreno venta loteo tierra mia atocha zo",
+      "precio": 19000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354348"
+    },
+    {
+      "id": 4333,
+      "argenprop_id": "20354346",
+      "titulo": "Casa en venta + depto independiente macr",
+      "precio": 160000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354346"
+    },
+    {
+      "id": 4336,
+      "argenprop_id": "20354350",
+      "titulo": "Terreno venta los olmos 360 cerrillos 32",
+      "precio": 13000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354350"
+    },
+    {
+      "id": 4335,
+      "argenprop_id": "20354349",
+      "titulo": "Casa en venta en construccion vaqueros 3",
+      "precio": 65000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354349"
+    },
+    {
+      "id": 4340,
+      "argenprop_id": "20356904",
+      "titulo": "Venta terreno dique cabra corral 600m2 b",
+      "precio": 13500.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20356904"
+    },
+    {
+      "id": 4338,
+      "argenprop_id": "20354352",
+      "titulo": "Terreno en venta club de campo el tipal ",
+      "precio": 240000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20354352"
+    },
+    {
+      "id": 4341,
+      "argenprop_id": "20356906",
+      "titulo": "Alquiler galpón parque industrial opcion",
+      "precio": 2600.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20356906"
+    },
+    {
+      "id": 4343,
+      "argenprop_id": "20356908",
+      "titulo": "Venta casa 2 dormitorios praderas de san",
+      "precio": 285000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20356908"
+    },
+    {
+      "id": 4344,
+      "argenprop_id": "20357468",
+      "titulo": "Casa 7 dormitorios venta zona macrocentr",
+      "precio": 206000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357468"
+    },
+    {
+      "id": 4346,
+      "argenprop_id": "20357471",
+      "titulo": "Departamento en venta macrocentro 3 dorm",
+      "precio": 68000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357471"
+    },
+    {
+      "id": 4348,
+      "argenprop_id": "20357474",
+      "titulo": "Oficinas en alquiler 25 de mayo al 800",
+      "precio": 1350.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357474"
+    },
+    {
+      "id": 4347,
+      "argenprop_id": "20357473",
+      "titulo": "Casa venta acepta permuta",
+      "precio": 250000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357473"
+    },
+    {
+      "id": 4349,
+      "argenprop_id": "20357475",
+      "titulo": "Venta terreno b° buen clima zona oeste a",
+      "precio": 17000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357475"
+    },
+    {
+      "id": 4352,
+      "argenprop_id": "20357482",
+      "titulo": "Terreno venta el mollar ii rp 24 rosario",
+      "precio": 25000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357482"
+    },
+    {
+      "id": 4351,
+      "argenprop_id": "20357479",
+      "titulo": "Casa en venta valle alegre la caldera ap",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357479"
+    },
+    {
+      "id": 4350,
+      "argenprop_id": "20357478",
+      "titulo": "Casa venta club de campo el tipal los pi",
+      "precio": 1500000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20357478"
+    },
+    {
+      "id": 4353,
+      "argenprop_id": "20359162",
+      "titulo": "Venta casa 3 dorm la cercanía san lorenz",
+      "precio": 330000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20359162"
+    },
+    {
+      "id": 4358,
+      "argenprop_id": "20359168",
+      "titulo": "Alquiler depto 3 dormitorios san lorenzo",
+      "precio": 2000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20359168"
+    },
+    {
+      "id": 4357,
+      "argenprop_id": "20359167",
+      "titulo": "Alquiler departamento 2 dorm san lorenzo",
+      "precio": 1600.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20359167"
+    },
+    {
+      "id": 4355,
+      "argenprop_id": "20359164",
+      "titulo": "Venta terreno las chuñas san lorenzo chi",
+      "precio": 127000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20359164"
+    },
+    {
+      "id": 4361,
+      "argenprop_id": "20359851",
+      "titulo": "Casa venta a refaccionar + dpto en macro",
+      "precio": 73000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20359851"
+    },
+    {
+      "id": 4364,
+      "argenprop_id": "20360007",
+      "titulo": "Casa venta septiembre san lorenzo chico",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20360007"
+    },
+    {
+      "id": 4375,
+      "argenprop_id": "20362415",
+      "titulo": "Casa en venta o permuta av. san martin a",
+      "precio": 100000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20362415"
+    },
+    {
+      "id": 4378,
+      "argenprop_id": "20363655",
+      "titulo": "Departamentoen venta zona shopping 1 dor",
+      "precio": 102000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20363655"
+    },
+    {
+      "id": 4399,
+      "argenprop_id": "20367370",
+      "titulo": "Depto venta luminoso con balcón², 2d, ma",
+      "precio": 88000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20367370"
+    },
+    {
+      "id": 4402,
+      "argenprop_id": "20367379",
+      "titulo": "Terreno en venta b° los payos tartagal 3",
+      "precio": 25000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20367379"
+    },
+    {
+      "id": 4401,
+      "argenprop_id": "20367377",
+      "titulo": "Casa en venta las moras circunv. oeste 3",
+      "precio": 170000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20367377"
+    },
+    {
+      "id": 4406,
+      "argenprop_id": "20367853",
+      "titulo": "Venta depto zona centro 2 dorm cochera y",
+      "precio": 150000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20367853"
+    },
+    {
+      "id": 4405,
+      "argenprop_id": "20367617",
+      "titulo": "Casa venta eko distrito duplex 2",
+      "precio": 110000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20367617"
+    },
+    {
+      "id": 4430,
+      "argenprop_id": "20373756",
+      "titulo": "Casa en venta lucinda 1 apta credito hip",
+      "precio": 295000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20373756"
+    },
+    {
+      "id": 4433,
+      "argenprop_id": "20373761",
+      "titulo": "Casa en venta en portezuelo norte 4 dorm",
+      "precio": 180000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20373761"
+    },
+    {
+      "id": 4432,
+      "argenprop_id": "20373758",
+      "titulo": "Edificio a la venta macrocentro inversio",
+      "precio": 450000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20373758"
+    },
+    {
+      "id": 4437,
+      "argenprop_id": "20375074",
+      "titulo": "Venta terreno dique cabra corral ruta 47",
+      "precio": 35000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20375074"
+    },
+    {
+      "id": 4436,
+      "argenprop_id": "20375072",
+      "titulo": "Venta casa macrocentro 9 dormitorios con",
+      "precio": 143000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20375072"
+    },
+    {
+      "id": 4438,
+      "argenprop_id": "20375367",
+      "titulo": "Casa apta crédito en venta zona sur 3 do",
+      "precio": 47000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20375367"
+    },
+    {
+      "id": 4439,
+      "argenprop_id": "20375380",
+      "titulo": "Departamento en planta baja en venta b° ",
+      "precio": 50000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20375380"
+    },
+    {
+      "id": 4441,
+      "argenprop_id": "20376038",
+      "titulo": "Terreno venta el chamical rp 48",
+      "precio": 30000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20376038"
+    },
+    {
+      "id": 4440,
+      "argenprop_id": "20376036",
+      "titulo": "Oficinas en alquiler centro apto profesi",
+      "precio": 15000000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20376036"
+    },
+    {
+      "id": 4445,
+      "argenprop_id": "20377471",
+      "titulo": "Casa venta o permuta b° privado la verbe",
+      "precio": 180000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20377471"
+    },
+    {
+      "id": 4447,
+      "argenprop_id": "20378026",
+      "titulo": "Casa en la merced",
+      "precio": 180000.0,
+      "moneda": "USD",
+      "inmobiliaria": "KW Salta",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20378026"
+    },
+    {
+      "id": 4446,
+      "argenprop_id": "20377611",
+      "titulo": "Casa venta macrocentro 4 dormitorios",
+      "precio": 135000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20377611"
+    },
+    {
+      "id": 4455,
+      "argenprop_id": "20381512",
+      "titulo": "Casa 8 ambientes 500 m2 venta la lucinda",
+      "precio": 550000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381512"
+    },
+    {
+      "id": 4454,
+      "argenprop_id": "20381479",
+      "titulo": "Casa en venta zona shopping alto noa",
+      "precio": 100000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381479"
+    },
+    {
+      "id": 4456,
+      "argenprop_id": "20392184",
+      "titulo": "Venta casa metán: terreno con casa a ref",
+      "precio": 46000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20392184"
+    },
+    {
+      "id": 4458,
+      "argenprop_id": "20381544",
+      "titulo": "Casa en venta valle escondido apta credi",
+      "precio": 270000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381544"
+    },
+    {
+      "id": 4459,
+      "argenprop_id": "20381545",
+      "titulo": "Terreno venta sobre ruta 36 campo quijan",
+      "precio": 45000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381545"
+    },
+    {
+      "id": 4461,
+      "argenprop_id": "20381547",
+      "titulo": "Departamento amplio venta zona centro",
+      "precio": 250000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381547"
+    },
+    {
+      "id": 4465,
+      "argenprop_id": "20381553",
+      "titulo": "Casa 4 dormitorios almudena 2000m2",
+      "precio": 450000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381553"
+    },
+    {
+      "id": 4468,
+      "argenprop_id": "20381556",
+      "titulo": "Ph en venta zona macrocentro zuviria al ",
+      "precio": 81700.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381556"
+    },
+    {
+      "id": 4469,
+      "argenprop_id": "20381557",
+      "titulo": "Casa en venta con pileta el encon 2 dorm",
+      "precio": 69000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381557"
+    },
+    {
+      "id": 4470,
+      "argenprop_id": "20381559",
+      "titulo": "Casa venta san jose zona sur 3 dorm",
+      "precio": 54000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381559"
+    },
+    {
+      "id": 4471,
+      "argenprop_id": "20381560",
+      "titulo": "Departamento venta planta baja zona sur ",
+      "precio": 36000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381560"
+    },
+    {
+      "id": 4472,
+      "argenprop_id": "20381562",
+      "titulo": "Terreno venta de 7025 m2 la calderilla",
+      "precio": 50000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381562"
+    },
+    {
+      "id": 4478,
+      "argenprop_id": "20381572",
+      "titulo": "Hermoso departamento venta shopping el p",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381572"
+    },
+    {
+      "id": 4476,
+      "argenprop_id": "20381566",
+      "titulo": "Casa venta macrocentro 3 dorm inversion",
+      "precio": 380000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381566"
+    },
+    {
+      "id": 4483,
+      "argenprop_id": "20381578",
+      "titulo": "Casa venta b° las magdalenas grand bourg",
+      "precio": 145000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20381578"
+    },
+    {
+      "id": 4493,
+      "argenprop_id": "20384813",
+      "titulo": "Casa a refaccionar en venta sobre av yri",
+      "precio": 49800.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20384813"
+    },
+    {
+      "id": 4492,
+      "argenprop_id": "20384513",
+      "titulo": "Venta dos galpones parque industrial apt",
+      "precio": 680000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20384513"
+    },
+    {
+      "id": 4491,
+      "argenprop_id": "20384277",
+      "titulo": "Departamento venta 1 dormitorio + amenit",
+      "precio": 98000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20384277"
+    },
+    {
+      "id": 4494,
+      "argenprop_id": "20385311",
+      "titulo": "Departamento alquiler dean funes al 3300",
+      "precio": 650000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20385311"
+    },
+    {
+      "id": 4499,
+      "argenprop_id": "20386408",
+      "titulo": "Departamento venta macrocentro apto cred",
+      "precio": 77000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20386408"
+    },
+    {
+      "id": 4501,
+      "argenprop_id": "20386554",
+      "titulo": "Oficinas en alquiler en planta baja macr",
+      "precio": 1250000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20386554"
+    },
+    {
+      "id": 4502,
+      "argenprop_id": "20386833",
+      "titulo": "Casa en venta la lucinda norte/ acceso n",
+      "precio": 380000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20386833"
+    },
+    {
+      "id": 4509,
+      "argenprop_id": "20390534",
+      "titulo": "Venta depto 3 dormitorios zona sur apto ",
+      "precio": 35000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20390534"
+    },
+    {
+      "id": 4506,
+      "argenprop_id": "20388510",
+      "titulo": "Alquiler departamento tres cerritos 2 do",
+      "precio": 850000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20388510"
+    },
+    {
+      "id": 4523,
+      "argenprop_id": "20392400",
+      "titulo": "Departamento amplio alquiler zona centro",
+      "precio": 1700000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20392400"
+    },
+    {
+      "id": 4528,
+      "argenprop_id": "20394832",
+      "titulo": "Terreno venta sobre ruta 21 san agustin ",
+      "precio": 110000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20394832"
+    },
+    {
+      "id": 4529,
+      "argenprop_id": "20394841",
+      "titulo": "Departamento 1 dormitorio venta macrocen",
+      "precio": 65000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20394841"
+    },
+    {
+      "id": 4532,
+      "argenprop_id": "20396730",
+      "titulo": "Galpon en alquiler zona avenida san mart",
+      "precio": 2100000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20396730"
+    },
+    {
+      "id": 4537,
+      "argenprop_id": "20397611",
+      "titulo": "Departameto 3 dorm venta parque belgrano",
+      "precio": 65000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20397611"
+    },
+    {
+      "id": 4538,
+      "argenprop_id": "20397805",
+      "titulo": "Casa venta 5 dormitorios macrocentro",
+      "precio": 118000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20397805"
+    },
+    {
+      "id": 4539,
+      "argenprop_id": "20397908",
+      "titulo": "Terreno venta santa maria de los nogales",
+      "precio": 11000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20397908"
+    },
+    {
+      "id": 4540,
+      "argenprop_id": "20397953",
+      "titulo": "Casa venta zona parque san martin",
+      "precio": 125000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20397953"
+    },
+    {
+      "id": 4555,
+      "argenprop_id": "20399579",
+      "titulo": "Casa a construir en barrio privado la ve",
+      "precio": 255000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20399579"
+    },
+    {
+      "id": 4557,
+      "argenprop_id": "20399582",
+      "titulo": "Casa venta bº chachapoyas zona norte",
+      "precio": 83000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20399582"
+    },
+    {
+      "id": 4558,
+      "argenprop_id": "20399583",
+      "titulo": "Departamento amplio en alquiler peatonal",
+      "precio": 1700000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20399583"
+    },
+    {
+      "id": 4567,
+      "argenprop_id": "20402003",
+      "titulo": "Venta casa de dos dormitorios - barrio s",
+      "precio": 86000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20402003"
+    },
+    {
+      "id": 4572,
+      "argenprop_id": "20403349",
+      "titulo": "Departamento amplio venta tres cerritos ",
+      "precio": 185000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20403349"
+    },
+    {
+      "id": 4578,
+      "argenprop_id": "20403356",
+      "titulo": "Casa en alquiler comercial centro 440m2",
+      "precio": 2500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20403356"
+    },
+    {
+      "id": 4577,
+      "argenprop_id": "20403355",
+      "titulo": "Casa venta villa san lorenzo 3 dormitori",
+      "precio": 350000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20403355"
+    },
+    {
+      "id": 4580,
+      "argenprop_id": "20403359",
+      "titulo": "Casa venta barrio santa ana zona sur 3 d",
+      "precio": 69000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20403359"
+    },
+    {
+      "id": 4581,
+      "argenprop_id": "20403360",
+      "titulo": "Casa en venta san lorenzo chico 2 dormit",
+      "precio": 235000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20403360"
+    },
+    {
+      "id": 4583,
+      "argenprop_id": "20403367",
+      "titulo": "Casa en venta macrocentro españa al 1700",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20403367"
+    },
+    {
+      "id": 4586,
+      "argenprop_id": "20404237",
+      "titulo": "Terreno venta urbanizacion recodo villa ",
+      "precio": 28000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404237"
+    },
+    {
+      "id": 4587,
+      "argenprop_id": "20404873",
+      "titulo": "Casa para hacer flipping",
+      "precio": 60000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404873"
+    },
+    {
+      "id": 4588,
+      "argenprop_id": "20404874",
+      "titulo": "Casa c/local 2 dorm venta villa lola la ",
+      "precio": 115000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404874"
+    },
+    {
+      "id": 4589,
+      "argenprop_id": "20404877",
+      "titulo": "Casa venta zona norte b° mirasoles 6 dor",
+      "precio": 140000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404877"
+    },
+    {
+      "id": 4592,
+      "argenprop_id": "20404880",
+      "titulo": "Terreno en venta b° privado capiasu cerr",
+      "precio": 25000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404880"
+    },
+    {
+      "id": 4591,
+      "argenprop_id": "20404879",
+      "titulo": "Casa en venta tres cerritos 3 dorm apta ",
+      "precio": 225000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404879"
+    },
+    {
+      "id": 4593,
+      "argenprop_id": "20404882",
+      "titulo": "Departamento venta b° castañares apto cr",
+      "precio": 32000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404882"
+    },
+    {
+      "id": 4595,
+      "argenprop_id": "20404884",
+      "titulo": "Departamento en venta zona terminal 2 do",
+      "precio": 88000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404884"
+    },
+    {
+      "id": 4597,
+      "argenprop_id": "20404887",
+      "titulo": "Casa venta o permuta centro españa al 80",
+      "precio": 750000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20404887"
+    },
+    {
+      "id": 4603,
+      "argenprop_id": "20406707",
+      "titulo": "Venta terreno el prado eco village",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20406707"
+    },
+    {
+      "id": 4601,
+      "argenprop_id": "20406704",
+      "titulo": "Alquiler monoambiente amoblado macrocent",
+      "precio": 650000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20406704"
+    },
+    {
+      "id": 4612,
+      "argenprop_id": "20407730",
+      "titulo": "Casa en venta en cerrillos pueblo",
+      "precio": 600000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "Gaia Inversiones Inmobiliarias",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20407730"
+    },
+    {
+      "id": 4617,
+      "argenprop_id": "20409596",
+      "titulo": "Casa 4 dorm. en venta – el huaico | dueñ",
+      "precio": 150000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20409596"
+    },
+    {
+      "id": 4624,
+      "argenprop_id": "20413751",
+      "titulo": "Local comercial en venta macrocentro",
+      "precio": 260000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20413751"
+    },
+    {
+      "id": 4625,
+      "argenprop_id": "20413765",
+      "titulo": "Departamento alquiler planta baja macroc",
+      "precio": 800000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20413765"
+    },
+    {
+      "id": 4627,
+      "argenprop_id": "20413768",
+      "titulo": "Departamento amplio venta macrocentro 1 ",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20413768"
+    },
+    {
+      "id": 4630,
+      "argenprop_id": "20415722",
+      "titulo": "Venta departamento buenos aires 181 salt",
+      "precio": 140000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20415722"
+    },
+    {
+      "id": 4631,
+      "argenprop_id": "20415725",
+      "titulo": "Venta galpón con oficina a mts de avenid",
+      "precio": 240000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20415725"
+    },
+    {
+      "id": 4633,
+      "argenprop_id": "20415727",
+      "titulo": "Venta lote 477,78 m2 la silleta la arbol",
+      "precio": 11000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20415727"
+    },
+    {
+      "id": 4632,
+      "argenprop_id": "20415726",
+      "titulo": "Casa apta oficinas consultorios 3 cocher",
+      "precio": 185000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20415726"
+    },
+    {
+      "id": 4635,
+      "argenprop_id": "20415729",
+      "titulo": "Venta terreno la finca frente valle esco",
+      "precio": 80000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20415729"
+    },
+    {
+      "id": 4638,
+      "argenprop_id": "20416531",
+      "titulo": "Casa en venta ferroviario posibilidad de",
+      "precio": 145000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20416531"
+    },
+    {
+      "id": 4639,
+      "argenprop_id": "20416544",
+      "titulo": "Terreno venta campo quijano sobre ruta 5",
+      "precio": 45000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20416544"
+    },
+    {
+      "id": 4642,
+      "argenprop_id": "20417448",
+      "titulo": "Venta hotel boutique 10 dormitorios tres",
+      "precio": 1200000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20417448"
+    },
+    {
+      "id": 4641,
+      "argenprop_id": "20417365",
+      "titulo": "Venta departamento 1 dormitorio macrocen",
+      "precio": 60000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20417365"
+    },
+    {
+      "id": 4646,
+      "argenprop_id": "20417800",
+      "titulo": "Casa en venta macrocentro apta credito 3",
+      "precio": 115000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20417800"
+    },
+    {
+      "id": 4647,
+      "argenprop_id": "20418035",
+      "titulo": "Venta casa tres cerritos 4 dormitorios e",
+      "precio": 300000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20418035"
+    },
+    {
+      "id": 4648,
+      "argenprop_id": "20418041",
+      "titulo": "Casa venta alto la loma con quincho apta",
+      "precio": 265000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20418041"
+    },
+    {
+      "id": 4653,
+      "argenprop_id": "20418601",
+      "titulo": "Terreno venta la mision vaqueros de 664 ",
+      "precio": 11000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20418601"
+    },
+    {
+      "id": 4650,
+      "argenprop_id": "20418176",
+      "titulo": "Casa venta esquina cerrillos dueño finan",
+      "precio": 44000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20418176"
+    },
+    {
+      "id": 4654,
+      "argenprop_id": "20418736",
+      "titulo": "Casa zona shopping en venta permuta 460 ",
+      "precio": 350000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20418736"
+    },
+    {
+      "id": 4657,
+      "argenprop_id": "20420045",
+      "titulo": "Casa venta en pinares cerrillos 2 dormit",
+      "precio": 39000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20420045"
+    },
+    {
+      "id": 4658,
+      "argenprop_id": "20420057",
+      "titulo": "Departamento amplio venta av belgrano 2 ",
+      "precio": 119000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20420057"
+    },
+    {
+      "id": 4661,
+      "argenprop_id": "20421159",
+      "titulo": "Terreno venta via aurelia zona aeropuert",
+      "precio": 21000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20421159"
+    },
+    {
+      "id": 4664,
+      "argenprop_id": "20422959",
+      "titulo": "Casa venta tres cerritos dueño financia ",
+      "precio": 265000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20422959"
+    },
+    {
+      "id": 4666,
+      "argenprop_id": "20423116",
+      "titulo": "Casa venta club de campo el tipal 5 dorm",
+      "precio": 330000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20423116"
+    },
+    {
+      "id": 4667,
+      "argenprop_id": "20423302",
+      "titulo": "Venta departamento macro centro parque c",
+      "precio": 77000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20423302"
+    },
+    {
+      "id": 4681,
+      "argenprop_id": "20426895",
+      "titulo": "Casa en venta barrio san vicente cerrill",
+      "precio": 55000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20426895"
+    },
+    {
+      "id": 4686,
+      "argenprop_id": "20429288",
+      "titulo": "Casa venta b° scalabrini ortiz zona sur ",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20429288"
+    },
+    {
+      "id": 4687,
+      "argenprop_id": "20429313",
+      "titulo": "Departamento en venta via aurelia zona a",
+      "precio": 175000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20429313"
+    },
+    {
+      "id": 4704,
+      "argenprop_id": "20433277",
+      "titulo": "Venta departamento macrocentro 1 dormito",
+      "precio": 75000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20433277"
+    },
+    {
+      "id": 4707,
+      "argenprop_id": "20434268",
+      "titulo": "Casa con pileta en venta o permuta zona ",
+      "precio": 140000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20434268"
+    },
+    {
+      "id": 4709,
+      "argenprop_id": "20434276",
+      "titulo": "Monoambiennte amoblado venta zona tres c",
+      "precio": 63000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20434276"
+    },
+    {
+      "id": 4710,
+      "argenprop_id": "20434283",
+      "titulo": "Casa venta o permuta zona norte 4 dormit",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20434283"
+    },
+    {
+      "id": 4712,
+      "argenprop_id": "20434923",
+      "titulo": "Venta casa en tres cerritos , 3 dormitor",
+      "precio": 130000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20434923"
+    },
+    {
+      "id": 4717,
+      "argenprop_id": "20435478",
+      "titulo": "Casa venta tres cerritos dueño acepta de",
+      "precio": 155000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20435478"
+    },
+    {
+      "id": 4719,
+      "argenprop_id": "20435808",
+      "titulo": "Alquiler casa - las lomitas - campo quij",
+      "precio": 650000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20435808"
+    },
+    {
+      "id": 4720,
+      "argenprop_id": "20436251",
+      "titulo": "Alquiler departamento 1 dormitorio, macr",
+      "precio": 650000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20436251"
+    },
+    {
+      "id": 4722,
+      "argenprop_id": "20436925",
+      "titulo": "Hotel alquiler 30 dormitorios macrocentr",
+      "precio": 5400000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20436925"
+    },
+    {
+      "id": 4727,
+      "argenprop_id": "20436940",
+      "titulo": "Casa en venta valle escondido 4 dormitor",
+      "precio": 320000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20436940"
+    },
+    {
+      "id": 4733,
+      "argenprop_id": "20439983",
+      "titulo": "Departamento venta en b° juan pablo ii z",
+      "precio": 41000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20439983"
+    },
+    {
+      "id": 4735,
+      "argenprop_id": "20440048",
+      "titulo": "Casa venta portezuelo 3 dormitorios",
+      "precio": 115000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20440048"
+    },
+    {
+      "id": 4743,
+      "argenprop_id": "20441447",
+      "titulo": "Departamento venta a estrenar balcarce 1",
+      "precio": 74000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20441447"
+    },
+    {
+      "id": 4752,
+      "argenprop_id": "20443066",
+      "titulo": "Departamento amplio venta castañares apt",
+      "precio": 45000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20443066"
+    },
+    {
+      "id": 4760,
+      "argenprop_id": "20444415",
+      "titulo": "Deparamento amplio en venta españa 1700 ",
+      "precio": 75000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20444415"
+    },
+    {
+      "id": 4762,
+      "argenprop_id": "20444417",
+      "titulo": "Departamento en venta parque la vega c/ ",
+      "precio": 50000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20444417"
+    },
+    {
+      "id": 4768,
+      "argenprop_id": "20444423",
+      "titulo": "Casa venta los olmos cerrillos 3 dormito",
+      "precio": 260000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20444423"
+    },
+    {
+      "id": 4769,
+      "argenprop_id": "20444424",
+      "titulo": "Casa venta la luncida norte 3 dormitorio",
+      "precio": 330000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20444424"
+    },
+    {
+      "id": 4774,
+      "argenprop_id": "20446689",
+      "titulo": "Alquiler dpto 2 dormitorios macrocentro",
+      "precio": 700000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446689"
+    },
+    {
+      "id": 4775,
+      "argenprop_id": "20446690",
+      "titulo": "Venta terreno en club de campo la arbola",
+      "precio": 113960.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446690"
+    },
+    {
+      "id": 4776,
+      "argenprop_id": "20446691",
+      "titulo": "Venta terreno la arbolada san lorenzo ch",
+      "precio": 108405.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446691"
+    },
+    {
+      "id": 4777,
+      "argenprop_id": "20446692",
+      "titulo": "Venta terreno en club de campo la arbola",
+      "precio": 131340.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446692"
+    },
+    {
+      "id": 4778,
+      "argenprop_id": "20446693",
+      "titulo": "Venta terreno en la arbolada san lorenzo",
+      "precio": 108845.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446693"
+    },
+    {
+      "id": 4780,
+      "argenprop_id": "20446695",
+      "titulo": "Venta casa en valle alegre la caldera",
+      "precio": 62000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446695"
+    },
+    {
+      "id": 4781,
+      "argenprop_id": "20446697",
+      "titulo": "Alquiler oficina multiples usos comercia",
+      "precio": 750000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20446697"
+    },
+    {
+      "id": 4785,
+      "argenprop_id": "20448129",
+      "titulo": "Casa 3 dormitorios venta vaqueros con co",
+      "precio": 80000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20448129"
+    },
+    {
+      "id": 4787,
+      "argenprop_id": "20448132",
+      "titulo": "Casa venta tres cerritos 2 dormitorios",
+      "precio": 175000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20448132"
+    },
+    {
+      "id": 4801,
+      "argenprop_id": "20449403",
+      "titulo": "Departamento 1 dorm venta zona vaqueros ",
+      "precio": 72000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20449403"
+    },
+    {
+      "id": 4802,
+      "argenprop_id": "20449406",
+      "titulo": "Casa en venta coronel moldes 6 dormitori",
+      "precio": 55000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20449406"
+    },
+    {
+      "id": 4808,
+      "argenprop_id": "20449412",
+      "titulo": "Local comercial en venta en tartagal zon",
+      "precio": 2000000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20449412"
+    },
+    {
+      "id": 4810,
+      "argenprop_id": "20449414",
+      "titulo": "Terreno en venta la merced chica zona sa",
+      "precio": 43000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20449414"
+    },
+    {
+      "id": 4812,
+      "argenprop_id": "20449418",
+      "titulo": "Terreno venta via aurelia zona aeropuert",
+      "precio": 21000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20449418"
+    },
+    {
+      "id": 4814,
+      "argenprop_id": "20449422",
+      "titulo": "Casa en venta o permuta vaqueros 7 dormi",
+      "precio": 190000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20449422"
+    },
+    {
+      "id": 4815,
+      "argenprop_id": "20451705",
+      "titulo": "Venta de departamento de 3 dormitorios ,",
+      "precio": 147000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451705"
+    },
+    {
+      "id": 4816,
+      "argenprop_id": "20451706",
+      "titulo": "Venta terreno zona sur 15x 80 aprox",
+      "precio": 65000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451706"
+    },
+    {
+      "id": 4817,
+      "argenprop_id": "20451707",
+      "titulo": "Venta terreno 260m loteo rosario de lerm",
+      "precio": 11700000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451707"
+    },
+    {
+      "id": 4818,
+      "argenprop_id": "20451708",
+      "titulo": "Alquiler oficina 3 ambientes santiago de",
+      "precio": 800000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451708"
+    },
+    {
+      "id": 4819,
+      "argenprop_id": "20451709",
+      "titulo": "Venta oficina 3 ambientes santiago del e",
+      "precio": 79900.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451709"
+    },
+    {
+      "id": 4821,
+      "argenprop_id": "20451711",
+      "titulo": "Venta terreno en barrio cerrado la verbe",
+      "precio": 39600.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451711"
+    },
+    {
+      "id": 4823,
+      "argenprop_id": "20451713",
+      "titulo": "Alquiler oficinas consultorios macrocent",
+      "precio": 300000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20451713"
+    },
+    {
+      "id": 4829,
+      "argenprop_id": "20452840",
+      "titulo": "Venta casa 2 dormitorios la caldera apto",
+      "precio": 120000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20452840"
+    },
+    {
+      "id": 4839,
+      "argenprop_id": "20465614",
+      "titulo": "Local mas fondo de comercio en venta zon",
+      "precio": 350000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20465614"
+    },
+    {
+      "id": 4843,
+      "argenprop_id": "20467545",
+      "titulo": "Venta oficinas consultorios macrocentro ",
+      "precio": 160000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20467545"
+    },
+    {
+      "id": 4850,
+      "argenprop_id": "20467745",
+      "titulo": "Departametno en venta bº juan pablo ii z",
+      "precio": 48000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20467745"
+    },
+    {
+      "id": 4878,
+      "argenprop_id": "20472300",
+      "titulo": "Casa venta zona norte 6 dormitorios",
+      "precio": 95000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20472300"
+    },
+    {
+      "id": 4883,
+      "argenprop_id": "20472988",
+      "titulo": "Departamento venta b° casino zona sur",
+      "precio": 58000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20472988"
+    },
+    {
+      "id": 4886,
+      "argenprop_id": "20473023",
+      "titulo": "Departamento venta 2 dormitorios macroce",
+      "precio": 130000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20473023"
+    },
+    {
+      "id": 4888,
+      "argenprop_id": "20473098",
+      "titulo": "Casa venta en eko distrito a estrenar ce",
+      "precio": 80000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20473098"
+    },
+    {
+      "id": 4911,
+      "argenprop_id": "20478008",
+      "titulo": "Casa venta o permuta localidad guachipas",
+      "precio": 35000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20478008"
+    },
+    {
+      "id": 4918,
+      "argenprop_id": "20479208",
+      "titulo": "Casa venta av. sarmiento macrocentro 3 d",
+      "precio": 69500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20479208"
+    },
+    {
+      "id": 4928,
+      "argenprop_id": "20480180",
+      "titulo": "Terreno venta castellanos sobre ruta apt",
+      "precio": 230000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20480180"
+    },
+    {
+      "id": 4946,
+      "argenprop_id": "20480657",
+      "titulo": "Apta credito casa en venta vaqueros",
+      "precio": 250000.0,
+      "moneda": "USD",
+      "inmobiliaria": "Gaia Inversiones Inmobiliarias",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20480657"
+    },
+    {
+      "id": 4950,
+      "argenprop_id": "20481607",
+      "titulo": "Oficina en venta edificio real caseros |",
+      "precio": 42350.0,
+      "moneda": "USD",
+      "inmobiliaria": "LOGROS Servicios Inmobiliarios",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20481607"
+    },
+    {
+      "id": 4955,
+      "argenprop_id": "20481901",
+      "titulo": "Terreno en venta la caldera 450 m2",
+      "precio": 40000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20481901"
+    },
+    {
+      "id": 4956,
+      "argenprop_id": "20481902",
+      "titulo": "Local comercial en alquiler peatonal flo",
+      "precio": 6000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20481902"
+    },
+    {
+      "id": 4963,
+      "argenprop_id": "20484288",
+      "titulo": "Casa venta apta credito con pileta san l",
+      "precio": 185000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20484288"
+    },
+    {
+      "id": 4974,
+      "argenprop_id": "20484907",
+      "titulo": "Departamento en alquiler | centro, salta",
+      "precio": 1000000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "LOGROS Servicios Inmobiliarios",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20484907"
+    },
+    {
+      "id": 4978,
+      "argenprop_id": "20485331",
+      "titulo": "Departamento 1 dorm venta dueño financia",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20485331"
+    },
+    {
+      "id": 4985,
+      "argenprop_id": "20485489",
+      "titulo": "Campo venta 36 hectareas ruta 21 ideal p",
+      "precio": 1363000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20485489"
+    },
+    {
+      "id": 4988,
+      "argenprop_id": "20485637",
+      "titulo": "Casa en av bélgica",
+      "precio": 85000.0,
+      "moneda": "USD",
+      "inmobiliaria": "KW Salta",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20485637"
+    },
+    {
+      "id": 4991,
+      "argenprop_id": "20486507",
+      "titulo": "Venta – lote en barrio septiembre",
+      "precio": 44000.0,
+      "moneda": "USD",
+      "inmobiliaria": "Inmobiliaria Escudero",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20486507"
+    },
+    {
+      "id": 4993,
+      "argenprop_id": "20487530",
+      "titulo": "Casa con pileta en venta rosario de lerm",
+      "precio": 450000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20487530"
+    },
+    {
+      "id": 5016,
+      "argenprop_id": "20489826",
+      "titulo": "Terreno venta esquina via aurelia zona a",
+      "precio": 20500.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20489826"
+    },
+    {
+      "id": 5027,
+      "argenprop_id": "20490540",
+      "titulo": "Alquier casa tres cerritos 3 dormitorios",
+      "precio": 1200000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20490540"
+    },
+    {
+      "id": 5037,
+      "argenprop_id": "20491818",
+      "titulo": "Casa venta docente sur 3 dormitorios apt",
+      "precio": 73000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20491818"
+    },
+    {
+      "id": 5044,
+      "argenprop_id": "20493863",
+      "titulo": "Venta oficina con cochera - galería cerv",
+      "precio": 73000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20493863"
+    },
+    {
+      "id": 5046,
+      "argenprop_id": "20493865",
+      "titulo": "Casa y terreno en venta. yunga san loren",
+      "precio": 360000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20493865"
+    },
+    {
+      "id": 5047,
+      "argenprop_id": "20493866",
+      "titulo": "Venta terreno cafayate pueblo nuevo",
+      "precio": 9800.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20493866"
+    },
+    {
+      "id": 5053,
+      "argenprop_id": "20494515",
+      "titulo": "Casa 2 dormitorios venta zona macrocentr",
+      "precio": 180000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20494515"
+    },
+    {
+      "id": 5054,
+      "argenprop_id": "20494516",
+      "titulo": "Monoambiente en venta a estrenar macroce",
+      "precio": 70000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20494516"
+    },
+    {
+      "id": 5062,
+      "argenprop_id": "20494524",
+      "titulo": "Casa venta club de campo el tipal 5 dorm",
+      "precio": 550000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20494524"
+    },
+    {
+      "id": 5068,
+      "argenprop_id": "20494531",
+      "titulo": "Casa en venta en campo quijano con pilet",
+      "precio": 95000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20494531"
+    },
+    {
+      "id": 5073,
+      "argenprop_id": "20494536",
+      "titulo": "Casa en construccion venta eko distrito ",
+      "precio": 42000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20494536"
+    },
+    {
+      "id": 5077,
+      "argenprop_id": "20495503",
+      "titulo": "Local en venta o permuta en tres cerrito",
+      "precio": 450000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20495503"
+    },
+    {
+      "id": 5081,
+      "argenprop_id": "20495802",
+      "titulo": "Casa en venta con 5 departamentos zona o",
+      "precio": 140000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20495802"
+    },
+    {
+      "id": 5082,
+      "argenprop_id": "20495837",
+      "titulo": "Departamento amplio en venta macrocentro",
+      "precio": 55000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20495837"
+    },
+    {
+      "id": 5084,
+      "argenprop_id": "20495910",
+      "titulo": "Casa esquina venta zona sur ideal para i",
+      "precio": 80000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20495910"
+    },
+    {
+      "id": 5085,
+      "argenprop_id": "20496175",
+      "titulo": "Departamento venta apto credito 2 dorm c",
+      "precio": 90000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20496175"
+    },
+    {
+      "id": 5086,
+      "argenprop_id": "20497012",
+      "titulo": "Casa venta o permuta b° san vicente cerr",
+      "precio": 75000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20497012"
+    },
+    {
+      "id": 5089,
+      "argenprop_id": "20497532",
+      "titulo": "Terreno en venta en quebrada de los noga",
+      "precio": 63000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20497532"
+    },
+    {
+      "id": 5097,
+      "argenprop_id": "20504391",
+      "titulo": "Alquiler departamento 2 dormitorios jura",
+      "precio": 720000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20504391"
+    },
+    {
+      "id": 5096,
+      "argenprop_id": "20499221",
+      "titulo": "Local comercial alquiler centro planta b",
+      "precio": 15000000.0,
+      "moneda": "ARS",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20499221"
+    },
+    {
+      "id": 5101,
+      "argenprop_id": "20499526",
+      "titulo": "Local alquiler en subsuelo ideal para co",
+      "precio": 3000000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20499526"
+    },
+    {
+      "id": 5102,
+      "argenprop_id": "20499528",
+      "titulo": "Piso en alquiler galeria centro ideal of",
+      "precio": 10000000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20499528"
+    },
+    {
+      "id": 5104,
+      "argenprop_id": "20500504",
+      "titulo": "Alquiler segundo piso en el centro galer",
+      "precio": 6000000.0,
+      "moneda": "ARS",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20500504"
+    },
+    {
+      "id": 5105,
+      "argenprop_id": "20500554",
+      "titulo": "Departamento semipiso venta apto crédito",
+      "precio": 99000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20500554"
+    },
+    {
+      "id": 5111,
+      "argenprop_id": "20501879",
+      "titulo": "Casa en venta valle escondido apta credi",
+      "precio": 265000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20501879"
+    },
+    {
+      "id": 5119,
+      "argenprop_id": "20504387",
+      "titulo": "Terreno en venta, urbanizacion el recodo",
+      "precio": 18000.0,
+      "moneda": "USD",
+      "inmobiliaria": null,
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20504387"
+    },
+    {
+      "id": 5122,
+      "argenprop_id": "20505603",
+      "titulo": "Casa venta el tipal club de campo apta c",
+      "precio": 420000.0,
+      "moneda": "USD",
+      "inmobiliaria": "REMAX Noa",
+      "code": 410,
+      "url": "https://www.argenprop.com/propiedad--20505603"
+    }
+  ]
+}

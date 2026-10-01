@@ -17,32 +17,38 @@ logger = logging.getLogger("argenprop")
 _WAF_CACHE_FILE = Path(".waf_token.json")
 
 FINGERPRINTS = [
-    "chrome116",
     "chrome131",
     "chrome124",
     "chrome120",
+    "chrome116",
     "chrome110",
-    "edge101",
 ]
 
 
-def load_cached_waf_token() -> str | None:
+def load_cached_waf_data() -> tuple[str | None, dict[str, str]]:
     if _WAF_CACHE_FILE.exists():
         try:
             data = json.loads(_WAF_CACHE_FILE.read_text())
-            # Token válido por 3 horas (10800 segundos)
-            if time.time() - data.get("timestamp", 0) < 10800:
-                return data.get("token")
+            # Token válido por 2 horas (7200 segundos)
+            if time.time() - data.get("timestamp", 0) < 7200:
+                return data.get("token"), data.get("cookies", {})
         except Exception:
             pass
-    return None
+    return None, {}
 
 
-def save_cached_waf_token(token: str) -> None:
+def save_cached_waf_data(token: str, cookies: dict[str, str]) -> None:
     try:
         _WAF_CACHE_FILE.write_text(
-            json.dumps({"token": token, "timestamp": time.time()})
+            json.dumps({"token": token, "cookies": cookies, "timestamp": time.time()})
         )
+    except Exception:
+        pass
+
+
+def clear_cached_waf_token() -> None:
+    try:
+        _WAF_CACHE_FILE.unlink(missing_ok=True)
     except Exception:
         pass
 
@@ -50,7 +56,7 @@ def save_cached_waf_token(token: str) -> None:
 _waf_lock: asyncio.Lock | None = None
 
 
-async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> str | None:
+async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> tuple[str | None, dict[str, str]]:
     """Resuelve el desafío de AWS WAF mediante nodriver y guarda la cookie aws-waf-token."""
     global _waf_lock
     if _waf_lock is None:
@@ -58,26 +64,47 @@ async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> str | None:
 
     async with _waf_lock:
         # Verificar si otro worker ya resolvió el token mientras esperábamos el lock
-        cached = load_cached_waf_token()
-        if cached:
-            return cached
+        cached_token, cached_cookies = load_cached_waf_data()
+        if cached_token:
+            return cached_token, cached_cookies
 
         try:
             import nodriver as uc
         except ImportError:
             logger.error("❌ nodriver no disponible para resolver AWS WAF")
-            return None
+            return None, {}
 
         logger.info("🛡️ Resolviendo AWS WAF challenge con navegador automatizado...")
         browser = None
         try:
-            # Siempre headless salvo que explícitamente se active HEADED_SCRAPER=1
-            is_headed = bool(os.environ.get("HEADED_SCRAPER") == "1")
-            chrome_bin = "/usr/bin/google-chrome" if Path("/usr/bin/google-chrome").exists() else None
-            args = ["--window-size=600,400", "--disable-dev-shm-usage", "--no-sandbox"]
+            # En Railway se corre con xvfb-run (DISPLAY=:99) y NODRIVER_HEADLESS=false
+            has_display = bool(os.environ.get("DISPLAY"))
+            is_headless_env = os.environ.get("NODRIVER_HEADLESS", "").lower()
+            if is_headless_env == "false":
+                is_headed = True
+            elif is_headless_env == "true":
+                is_headed = False
+            else:
+                is_headed = has_display or (os.environ.get("HEADED_SCRAPER") == "1")
+
+            chrome_bin = os.environ.get("NODRIVER_BROWSER_PATH")
+            if not chrome_bin or not Path(chrome_bin).exists():
+                for candidate in (
+                    "/usr/bin/chromium",
+                    "/usr/bin/google-chrome",
+                    "/usr/bin/chromium-browser",
+                    "/bin/google-chrome",
+                    "/usr/bin/chrome",
+                ):
+                    if Path(candidate).exists():
+                        chrome_bin = candidate
+                        break
+
+            args = ["--window-size=1280,800", "--disable-dev-shm-usage", "--no-sandbox"]
             if not is_headed:
                 args.append("--disable-blink-features=AutomationControlled")
 
+            logger.info("  nodriver arrancando (headed=%s, bin=%s, display=%s)...", is_headed, chrome_bin, os.environ.get("DISPLAY"))
             browser = await uc.start(
                 headless=not is_headed,
                 browser_executable_path=chrome_bin,
@@ -85,17 +112,19 @@ async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> str | None:
             )
             tab = await browser.get(url)
 
+            cookies_dict: dict[str, str] = {}
             token = None
-            for _ in range(8):
+            for _ in range(14):
                 await asyncio.sleep(1.0)
                 try:
                     raw = await tab.send(uc.cdp.network.get_all_cookies())
                     for c in raw:
                         name = getattr(c, "name", None) or (c.get("name") if isinstance(c, dict) else None)
                         val = getattr(c, "value", None) or (c.get("value") if isinstance(c, dict) else None)
-                        if name == "aws-waf-token" and val:
-                            token = val
-                            break
+                        if name and val:
+                            cookies_dict[name] = val
+                            if name == "aws-waf-token":
+                                token = val
                 except Exception:
                     pass
                 if token:
@@ -103,14 +132,15 @@ async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> str | None:
 
             if token:
                 logger.info("✅ Token AWS WAF obtenido exitosamente (%s...)", token[:25])
-                save_cached_waf_token(token)
-                return token
+                save_cached_waf_data(token, cookies_dict)
+                return token, cookies_dict
 
             logger.warning("⚠️ No se pudo obtener la cookie aws-waf-token tras la espera")
-            return None
+            return None, {}
+
         except Exception as exc:
             logger.error("❌ Error en solver WAF nodriver: %s", exc)
-            return None
+            return None, {}
         finally:
             if browser:
                 try:
@@ -160,7 +190,7 @@ class ApSession:
     def __init__(self) -> None:
         self.session: Optional[AsyncSession] = None
         self._ready = False
-        self._current_fp = "chrome116"
+        self._current_fp = "chrome131"
         self._fp_index = 0
         self._last_request_time = 0.0
         self._waf_blocked = False
@@ -195,7 +225,31 @@ class ApSession:
             headers["Sec-Fetch-Site"] = "none"
         return headers
 
-    async def init(self, fingerprint: str | None = None) -> None:
+    async def warmup(self) -> bool:
+        """Realiza un warm-up progresivo para sembrar cookies de CloudFront y evitar desafíos AWS WAF."""
+        if not self.session:
+            return False
+        logger.info("🔥 Iniciando warm-up progresivo en Argenprop...")
+        try:
+            r1 = await self.session.get(
+                f"{BASE}/",
+                headers={"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+            )
+            if r1.status_code == 200:
+                logger.info("  [1/2] Home Argenprop -> HTTP 200 (%sb) ✅", len(r1.text or ""))
+            await asyncio.sleep(random.uniform(0.4, 0.8))
+
+            salta_url = f"{BASE}/inmuebles/alquiler-o-venta/salta-arg"
+            r2 = await self.session.get(salta_url, headers={"Referer": f"{BASE}/"})
+            if r2.status_code == 200:
+                logger.info("  [2/2] Catálogo Salta -> HTTP 200 (%sb) ✅", len(r2.text or ""))
+                logger.info("✅ Warm-up de Argenprop completado exitosamente")
+                return True
+        except Exception as exc:
+            logger.warning("Aviso en warm-up: %s", exc)
+        return False
+
+    async def init(self, fingerprint: str | None = None, auto_warmup: bool = True) -> None:
         if self.session:
             try:
                 await self.session.close()
@@ -209,19 +263,26 @@ class ApSession:
             headers=self._headers(),
             max_redirects=5,
         )
-        cached_token = load_cached_waf_token()
-        if cached_token:
+        cached_token, cached_cookies = load_cached_waf_data()
+        if cached_cookies:
+            for k, v in cached_cookies.items():
+                self.session.cookies.set(k, v, domain=".argenprop.com")
+            logger.info("Cookies AWS WAF cargadas desde caché (%d cookies)", len(cached_cookies))
+        elif cached_token:
             self.session.cookies.set("aws-waf-token", cached_token, domain=".argenprop.com")
             logger.info("Cookie aws-waf-token cargada desde caché")
         self._ready = True
         logger.info("Sesión Argenprop inicializada (fp=%s)", fp)
+        if auto_warmup:
+            await self.warmup()
 
     async def _rotate_fingerprint(self) -> str:
         self._fp_index = (self._fp_index + 1) % len(FINGERPRINTS)
         new_fp = FINGERPRINTS[self._fp_index]
         logger.info("Rotando fingerprint: %s -> %s", self._current_fp, new_fp)
-        await self.init(new_fp)
+        await self.init(new_fp, auto_warmup=False)
         return new_fp
+
 
     async def get_html(self, url: str, referer: str | None = None) -> str | None:
         if self._waf_blocked:
@@ -256,15 +317,17 @@ class ApSession:
             if resp.status_code == 404:
                 return html if html else "<html></html>"
 
-            if resp.status_code in (202, 403) or is_waf_challenge(html):
+            if resp.status_code in (202, 403, 405) or is_waf_challenge(html):
                 logger.warning(
                     "Aviso WAF (HTTP %s, %sb) — resolviendo token de AWS WAF...",
                     resp.status_code,
                     len(html),
                 )
-                token = await solve_waf_with_nodriver(url)
-                if token:
-                    self.session.cookies.set("aws-waf-token", token, domain=".argenprop.com")
+                clear_cached_waf_token()
+                token, cookies_dict = await solve_waf_with_nodriver(url)
+                if token and cookies_dict:
+                    for k, v in cookies_dict.items():
+                        self.session.cookies.set(k, v, domain=".argenprop.com")
                     self.session.cookies.set("aws-waf-token", token, domain=".sosiva451.com")
                     self._waf_blocked = False
                     try:

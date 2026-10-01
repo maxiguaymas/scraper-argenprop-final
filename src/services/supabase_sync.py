@@ -223,8 +223,8 @@ async def run_full_production_pipeline(
     print("\n📍 [FASE 3/5] Verificando avisos despublicados (bajas)...")
     scraped_ids = {str(item.get("argenprop_id")) for item in scraped_listings if item.get("argenprop_id")}
 
-    # Solo marcamos bajas si el scrape fue exhaustivo (> 2000 propiedades) para evitar falsos positivos
-    if len(scraped_ids) >= 2000:
+    # Solo marcamos bajas si el scrape fue representativo (> 1000 propiedades) para evitar falsos positivos
+    if len(scraped_ids) >= 1000:
         active_in_db = await asyncio.to_thread(get_all_active_ids)
         suspected_delisted = [
             p for p in active_in_db
@@ -235,19 +235,20 @@ async def run_full_production_pipeline(
         confirmed_bajas_ids: list[str] = []
         if suspected_delisted:
             if verify_bajas:
-                print(f"  🕵️ Ejecutando doble-check HTTP en {min(len(suspected_delisted), 80)} fichas sospechosas...")
-                items_to_check = [{"zpId": p["argenprop_id"], "url": p["url"]} for p in suspected_delisted[:80]]
-                check_results = await verify_ficha_urls(items_to_check)
+                max_check = min(len(suspected_delisted), 500)
+                print(f"  🕵️ Ejecutando doble-check HTTP en {max_check} fichas sospechosas...")
+                items_to_check = [{"zpId": str(p["argenprop_id"]), "url": p.get("url") or ""} for p in suspected_delisted[:max_check]]
+                check_results = await verify_ficha_urls(items_to_check, concurrency=4)
                 for r in check_results:
                     if not r.get("alive"):
                         confirmed_bajas_ids.append(str(r["zpId"]))
-                print(f"  🎯 Bajas confirmadas por 404/no disponible: {len(confirmed_bajas_ids)}")
+                print(f"  🎯 Bajas confirmadas por 410/404: {len(confirmed_bajas_ids)}")
             else:
                 confirmed_bajas_ids = [str(p["argenprop_id"]) for p in suspected_delisted]
 
         if confirmed_bajas_ids:
             updated_bajas = await asyncio.to_thread(
-                mark_delisted_batch, confirmed_bajas_ids, "despublicada_en_argenprop"
+                mark_delisted_batch, confirmed_bajas_ids, "removida_http_410"
             )
             summary["delisted"]["confirmed"] = updated_bajas
             print(f"  ✅ {updated_bajas} propiedades marcadas como inactivas (activa=false).")
@@ -255,8 +256,9 @@ async def run_full_production_pipeline(
             summary["delisted"]["confirmed"] = 0
             print("  ℹ️ No se detectaron bajas confirmadas.")
     else:
-        print("  ⚠️ El volumen scrapeado fue inferior al umbral de seguridad (2000). Se omitió el chequeo de bajas.")
+        print(f"  ⚠️ El volumen scrapeado ({len(scraped_ids)}) fue inferior al umbral de seguridad (1000). Se omitió el chequeo de bajas.")
         summary["delisted"]["skipped"] = True
+
 
     # FASE 4: Enriquecimiento de Fichas Nuevas / Faltantes
     print("\n📍 [FASE 4/5] Enriqueciendo propiedades nuevas o sin GPS/teléfono...")

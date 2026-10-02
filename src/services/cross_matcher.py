@@ -65,20 +65,44 @@ def normalize_op(op: str | None) -> str:
     return "venta"
 
 
-def fetch_supabase_table(table: str, select: str, filter_params: str = "activa=eq.true&limit=1000") -> list[dict]:
-    url = f"{settings.supabase_url.rstrip('/')}/rest/v1/{table}?select={select}&{filter_params}"
+def fetch_supabase_table(
+    table: str,
+    select: str,
+    filter_params: str = "activa=eq.true",
+    max_total: int | None = None,
+) -> list[dict]:
+    """Descarga registros de Supabase paginando automáticamente de a 1000 con offset."""
+    all_data: list[dict] = []
+    page_size = 1000
+    offset = 0
+    clean_filter = re.sub(r"&?limit=\d+", "", filter_params).strip("&")
     headers = {
         "apikey": settings.supabase_service_role_key,
         "Authorization": f"Bearer {settings.supabase_service_role_key}",
     }
-    req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode())
-            return data if isinstance(data, list) else []
-    except Exception as exc:
-        print(f"Error fetching {table}: {exc}")
-        return []
+
+    while True:
+        limit = page_size if max_total is None else min(page_size, max_total - len(all_data))
+        if limit <= 0:
+            break
+        q = f"select={select}&limit={limit}&offset={offset}"
+        if clean_filter:
+            q = f"{q}&{clean_filter}"
+        url = f"{settings.supabase_url.rstrip('/')}/rest/v1/{table}?{q}"
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=35) as resp:
+                data = json.loads(resp.read().decode())
+                if not data or not isinstance(data, list):
+                    break
+                all_data.extend(data)
+                offset += len(data)
+                if len(data) < limit:
+                    break
+        except Exception as exc:
+            print(f"Error fetching {table} (offset {offset}): {exc}")
+            break
+    return all_data
 
 
 def is_generic_centroid(lat: float | None, lon: float | None) -> bool:
@@ -285,12 +309,15 @@ def analyze_cross_market(limit_ap: int | None = None) -> dict[str, Any]:
     zp_cols = "id,zonaprop_id,titulo,tipo_propiedad,tipo_operacion,precio,moneda,ubicacion,barrio,latitud,longitud,superficie_total,superficie_cubierta,dormitorios,anunciante_nombre,anunciante_telefono,anunciante_whatsapp,url,imagen_principal,publicado_hace"
 
     print("📥 Descargando propiedades de Argenprop desde Supabase...")
-    filter_ap = f"activa=eq.true&limit={limit_ap}" if limit_ap else "activa=eq.true&limit=10000"
-    ap_props = fetch_supabase_table("argenprop_propiedades", select=ap_cols, filter_params=filter_ap)
+    ap_props = fetch_supabase_table(
+        "argenprop_propiedades", select=ap_cols, filter_params="activa=eq.true", max_total=limit_ap
+    )
     print(f"  -> {len(ap_props)} propiedades obtenidas de Argenprop.")
 
     print("📥 Descargando propiedades de Zonaprop desde Supabase...")
-    zp_props = fetch_supabase_table("zonaprop_propiedades", select=zp_cols, filter_params="activa=eq.true&limit=10000")
+    zp_props = fetch_supabase_table(
+        "zonaprop_propiedades", select=zp_cols, filter_params="activa=eq.true"
+    )
     print(f"  -> {len(zp_props)} propiedades obtenidas de Zonaprop.")
 
     # Pre-indexar Zonaprop por tipo de operación y precalcular campos para ultra-velocidad

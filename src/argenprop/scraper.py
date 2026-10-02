@@ -118,9 +118,12 @@ async def scrape_catalog_segmented(
     page = max(1, int(start_page))
     seen: set[str] = set()
     results: list[dict[str, Any]] = []
-    empty_streak = 0
     pages_visited = 0
-    effective_max_pages = max_pages if max_pages is not None else max(40, (limit + 19) // 20 + 20)
+    empty_streak = 0
+    total_segments = len(discover_all_segments())
+    effective_max_pages = (
+        max_pages if max_pages is not None else max(total_segments * MAX_SAFE_PAGE, (limit + 19) // 20 + 50)
+    )
 
     while len(results) < limit and pages_visited < effective_max_pages and empty_streak < 3:
         mapped = _segment_cursor_from_page(page)

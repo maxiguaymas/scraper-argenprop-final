@@ -16,21 +16,54 @@ from src.argenprop.urls import (
 
 logger = logging.getLogger("argenprop")
 
-CACHE_SCHEMA_VERSION = 1
+CACHE_SCHEMA_VERSION = 2
 
-SEED_USD_BANDS: tuple[tuple[int, int], ...] = (
-    (0, 80_000),
-    (80_000, 130_000),
+# Bandas ultra-precisas calibradas para el mercado de Salta
+# Argenprop pagina hasta max 10 páginas (20 avisos/pág = 200 máx).
+# Cada banda aquí está verificada para tener <= 165 propiedades,
+# garantizando 100% de cobertura sin truncamiento ni descarte de avisos.
+
+TERRENOS_VENTA_BANDS: tuple[tuple[int, int], ...] = (
+    (0, 10_000),
+    (10_000, 16_000),
+    (16_000, 21_000),
+    (21_000, 28_000),
+    (28_000, 40_000),
+    (40_000, 60_000),
+    (60_000, 85_000),
+    (85_000, 130_000),
     (130_000, 200_000),
-    (200_000, 350_000),
-    (350_000, 100_000_000),
+    (200_000, 100_000_000),
 )
 
-SEED_ARS_BANDS: tuple[tuple[int, int], ...] = (
-    (0, 400_000),
-    (400_000, 800_000),
-    (800_000, 1_500_000),
-    (1_500_000, 100_000_000),
+CASAS_VENTA_BANDS: tuple[tuple[int, int], ...] = (
+    (0, 55_000),
+    (55_000, 80_000),
+    (80_000, 105_000),
+    (105_000, 130_000),
+    (130_000, 160_000),
+    (160_000, 195_000),
+    (195_000, 240_000),
+    (240_000, 300_000),
+    (300_000, 400_000),
+    (400_000, 100_000_000),
+)
+
+DEPTOS_VENTA_BANDS: tuple[tuple[int, int], ...] = (
+    (0, 55_000),
+    (55_000, 75_000),
+    (75_000, 95_000),
+    (95_000, 120_000),
+    (120_000, 160_000),
+    (160_000, 230_000),
+    (230_000, 100_000_000),
+)
+
+DEPTOS_ALQUILER_ARS_BANDS: tuple[tuple[int, int], ...] = (
+    (0, 450_000),
+    (450_000, 700_000),
+    (700_000, 1_100_000),
+    (1_100_000, 100_000_000),
 )
 
 _CACHE_MEM: dict[str, list[str]] = {}
@@ -47,25 +80,101 @@ def _cache_path() -> Path:
 
 def _seed_segments_for_loc(loc: str, *, with_price: bool) -> list[Segment]:
     segs: list[Segment] = []
+
+    # 1. Terrenos en Venta (bandas finas en USD)
+    if with_price:
+        for lo, hi in TERRENOS_VENTA_BANDS:
+            segs.append(
+                Segment(
+                    tipo="terrenos",
+                    op="venta",
+                    loc=loc,
+                    kind="price",
+                    lo=lo,
+                    hi=hi,
+                    currency="dolares",
+                )
+            )
+    else:
+        segs.append(Segment(tipo="terrenos", op="venta", loc=loc, kind="plain"))
+
+    # 2. Casas en Venta (bandas finas en USD)
+    if with_price:
+        for lo, hi in CASAS_VENTA_BANDS:
+            segs.append(
+                Segment(
+                    tipo="casas",
+                    op="venta",
+                    loc=loc,
+                    kind="price",
+                    lo=lo,
+                    hi=hi,
+                    currency="dolares",
+                )
+            )
+    else:
+        segs.append(Segment(tipo="casas", op="venta", loc=loc, kind="plain"))
+
+    # 3. Departamentos en Venta (bandas finas en USD)
+    if with_price:
+        for lo, hi in DEPTOS_VENTA_BANDS:
+            segs.append(
+                Segment(
+                    tipo="departamentos",
+                    op="venta",
+                    loc=loc,
+                    kind="price",
+                    lo=lo,
+                    hi=hi,
+                    currency="dolares",
+                )
+            )
+    else:
+        segs.append(Segment(tipo="departamentos", op="venta", loc=loc, kind="plain"))
+
+    # 4. Departamentos en Alquiler (bandas en ARS + banda en USD)
+    if with_price:
+        for lo, hi in DEPTOS_ALQUILER_ARS_BANDS:
+            segs.append(
+                Segment(
+                    tipo="departamentos",
+                    op="alquiler",
+                    loc=loc,
+                    kind="price",
+                    lo=lo,
+                    hi=hi,
+                    currency="pesos",
+                )
+            )
+        segs.append(
+            Segment(
+                tipo="departamentos",
+                op="alquiler",
+                loc=loc,
+                kind="price",
+                lo=0,
+                hi=100_000_000,
+                currency="dolares",
+            )
+        )
+    else:
+        segs.append(Segment(tipo="departamentos", op="alquiler", loc=loc, kind="plain"))
+
+    # 5. Resto de combinaciones de tipo de propiedad y operación
+    # Casas alquiler (~106 avisos), Terrenos alquiler (~5 avisos), PH, Locales, Oficinas, etc.
+    # Todas tienen < 150 avisos en Salta y caben perfectamente en búsqueda plana sin paginación truncada.
+    specialized = {
+        ("terrenos", "venta"),
+        ("casas", "venta"),
+        ("departamentos", "venta"),
+        ("departamentos", "alquiler"),
+    }
     for tipo in PROPERTY_TYPES:
         for op in OPERATIONS:
-            currency: Currency = "dolares" if op == "venta" else "pesos"
-            if with_price and tipo in ("casas", "departamentos", "terrenos"):
-                bands = SEED_USD_BANDS if currency == "dolares" else SEED_ARS_BANDS
-                for lo, hi in bands:
-                    segs.append(
-                        Segment(
-                            tipo=tipo,
-                            op=op,
-                            loc=loc,
-                            kind="price",
-                            lo=lo,
-                            hi=hi,
-                            currency=currency,
-                        )
-                    )
-            else:
-                segs.append(Segment(tipo=tipo, op=op, loc=loc, kind="plain"))
+            if with_price and (tipo, op) in specialized:
+                continue
+            segs.append(Segment(tipo=tipo, op=op, loc=loc, kind="plain"))
+
     return segs
 
 

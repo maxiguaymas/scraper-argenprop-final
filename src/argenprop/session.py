@@ -89,13 +89,17 @@ async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> tuple[str | None, di
 
             chrome_bin = os.environ.get("NODRIVER_BROWSER_PATH")
             if not chrome_bin or not Path(chrome_bin).exists():
-                for candidate in (
+                candidates = [
                     "/usr/bin/chromium",
                     "/usr/bin/google-chrome",
                     "/usr/bin/chromium-browser",
                     "/bin/google-chrome",
                     "/usr/bin/chrome",
-                ):
+                ]
+                pw_home = Path.home() / ".cache" / "ms-playwright"
+                if pw_home.exists():
+                    candidates.extend(str(p) for p in pw_home.glob("**/chrome-linux64/chrome"))
+                for candidate in candidates:
                     if Path(candidate).exists():
                         chrome_bin = candidate
                         break
@@ -109,6 +113,7 @@ async def solve_waf_with_nodriver(url: str = f"{BASE}/") -> tuple[str | None, di
                 headless=not is_headed,
                 browser_executable_path=chrome_bin,
                 browser_args=args,
+                no_sandbox=True,
             )
             tab = await browser.get(url)
 

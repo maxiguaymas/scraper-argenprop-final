@@ -433,7 +433,15 @@ def persist_cross_matches_to_supabase(batch_size: int = 100) -> dict[str, Any]:
             ap["anunciantes_grupo"] = anunciantes
             ap["cantidad_inmobiliarias"] = 1
 
-        rec = to_supabase_record(ap, now=now, is_insert=True)
+        rec = {
+            "argenprop_id": str(aid),
+            "es_compartida": ap["es_compartida"],
+            "es_exclusiva": ap["es_exclusiva"],
+            "grupo_compartida_id": ap["grupo_compartida_id"],
+            "anunciantes_grupo": ap["anunciantes_grupo"],
+            "cantidad_inmobiliarias": ap["cantidad_inmobiliarias"],
+            "updated_at": now.isoformat(),
+        }
         records_to_update.append(rec)
 
     # Bulk update a Supabase

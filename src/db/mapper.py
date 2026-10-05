@@ -279,6 +279,9 @@ def to_supabase_record(
         "imagenes",
         "anunciante_cucis",
         "anunciante_logo",
+        "visualizaciones",
+        "fecha_publicacion",
+        "publicado_hace",
     }
     for col in ENRICH_ONLY_COLUMNS:
         if col in filtered and (filtered[col] is None or filtered[col] == [] or col not in prop):

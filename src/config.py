@@ -56,7 +56,7 @@ class Settings(BaseSettings):
     sync_interval_hours: int = Field(default=2, validation_alias="SYNC_INTERVAL_HOURS")
     run_on_startup: bool = Field(default=True, validation_alias="RUN_ON_STARTUP")
     catalog_limit: int = Field(default=10000, validation_alias="CATALOG_LIMIT")
-    enrich_limit: int = Field(default=300, validation_alias="ENRICH_LIMIT")
+    enrich_limit: int = Field(default=1000, validation_alias="ENRICH_LIMIT")
 
 
 settings = Settings()

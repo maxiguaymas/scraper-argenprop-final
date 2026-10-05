@@ -295,18 +295,29 @@ def extract_fields_from_api_json(data: dict[str, Any]) -> dict[str, Any]:
             fields["fecha_publicacion"] = str(f_pub)[:10]
 
     # Teléfono y WhatsApp
-    phone = data.get("TelefonoContacto_t")
-    if phone:
-        clean = re.sub(r"[^\d+]", "", str(phone))
-        if len(clean) >= 6:
-            fields["anunciante_telefono"] = clean
-            wa = clean
-            if not wa.startswith("+"):
-                if len(wa) == 10:
-                    wa = f"+549{wa}"
-                elif len(wa) == 7:
-                    wa = f"+549387{wa}"
-            fields["anunciante_whatsapp"] = wa
+    raw_phone = data.get("TelefonoContacto_t")
+    raw_wa = data.get("TelefonoWhatsApp_i")
+
+    clean_phone = re.sub(r"[^\d+]", "", str(raw_phone)) if raw_phone else None
+    clean_wa = re.sub(r"[^\d+]", "", str(raw_wa)) if raw_wa else None
+
+    tel = clean_phone or clean_wa
+    if tel and len(tel) >= 6:
+        fields["anunciante_telefono"] = tel
+
+    wa = clean_wa or clean_phone
+    if wa and len(wa) >= 6:
+        digits = re.sub(r"[^\d]", "", wa)
+        if digits.startswith("549"):
+            fields["anunciante_whatsapp"] = f"+{digits}"
+        elif digits.startswith("54"):
+            fields["anunciante_whatsapp"] = f"+549{digits[2:]}"
+        elif len(digits) == 10:
+            fields["anunciante_whatsapp"] = f"+549{digits}"
+        elif len(digits) == 7:
+            fields["anunciante_whatsapp"] = f"+549387{digits}"
+        else:
+            fields["anunciante_whatsapp"] = f"+{digits}"
 
     # Descripción
     desc = data.get("InformacionAdicional_t") or data.get("DescripcionSeo_t")

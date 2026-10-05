@@ -201,7 +201,7 @@ def to_supabase_record(
         "provincia": prop.get("provincia") or "Salta",
         "latitud": lat,
         "longitud": lon,
-        "coordenadas_origen": coord_orig if (lat and lon) else None,
+        "coordenadas_origen": coord_orig if (coord_orig or (lat and lon)) else None,
         "superficie_total": float(sup_tot) if sup_tot is not None else None,
         "superficie_cubierta": float(prop.get("superficie_cubierta")) if prop.get("superficie_cubierta") is not None else None,
         "ambientes": int(prop.get("ambientes") or 0),
@@ -263,6 +263,24 @@ def to_supabase_record(
 
     # Filtrar estrictamente solo las columnas que existen en Supabase
     filtered = {k: v for k, v in record.items() if k in SUPABASE_COLUMNS}
+
+    # Evitar que campos de enriquecimiento de detalle (GPS, teléfono, fotos, descripción)
+    # se envíen como None / vacíos durante el guardado de catálogo regular, lo que
+    # sobreescribiría en Supabase las fichas ya enriquecidas previamente.
+    ENRICH_ONLY_COLUMNS = {
+        "latitud",
+        "longitud",
+        "coordenadas_origen",
+        "anunciante_telefono",
+        "anunciante_whatsapp",
+        "descripcion",
+        "imagenes",
+        "anunciante_cucis",
+        "anunciante_logo",
+    }
+    for col in ENRICH_ONLY_COLUMNS:
+        if col in filtered and (filtered[col] is None or filtered[col] == [] or col not in prop):
+            del filtered[col]
 
     if not is_insert:
         # En updates (PATCH), solo mandar campos con valor presente en prop para no sobreescribir columnas NOT NULL con None

@@ -81,9 +81,6 @@ async def run_supabase_enrich(limit: int = 50) -> dict[str, Any]:
                         rec = to_supabase_record(fields, now=now, is_insert=False)
                         await asyncio.to_thread(update_property, row_id, rec)
                         stats["enriched"] += 1
-                    else:
-                        rec = to_supabase_record({"argenprop_id": aid, "coordenadas_origen": "sin_datos"}, now=now, is_insert=False)
-                        await asyncio.to_thread(update_property, row_id, rec)
                 except Exception as exc:
                     print(f"  ⚠️ Error actualizando {aid} en Supabase: {exc}")
                     stats["errors"] += 1

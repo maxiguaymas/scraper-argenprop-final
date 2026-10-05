@@ -67,7 +67,23 @@ def _request(
 
 
 def get_table() -> str:
-    return "argenprop_propiedades"
+    try:
+        from src.argenprop.region import get_region
+        return get_region().table
+    except Exception:
+        return "argenprop_propiedades"
+
+
+def truncate_current_table() -> int:
+    """Vacía todos los registros de la tabla activa de la región actual."""
+    table = get_table()
+    res = _request(
+        "DELETE",
+        table,
+        params={"id": "gt.0"},
+        prefer="return=representation",
+    )
+    return len(res) if isinstance(res, list) else 0
 
 
 def get_by_argenprop_id(argenprop_id: str) -> dict[str, Any] | None:

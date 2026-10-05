@@ -14,6 +14,7 @@ import math
 import re
 import urllib.request
 from typing import Any
+from src.argenprop.region import get_region
 from src.config import settings
 
 
@@ -308,15 +309,19 @@ def analyze_cross_market(limit_ap: int | None = None) -> dict[str, Any]:
     ap_cols = "id,argenprop_id,titulo,tipo_propiedad,tipo_operacion,precio,moneda,ubicacion,barrio,latitud,longitud,superficie_total,superficie_cubierta,dormitorios,anunciante_nombre,anunciante_telefono,anunciante_whatsapp,url,imagen_principal,publicado_hace"
     zp_cols = "id,zonaprop_id,titulo,tipo_propiedad,tipo_operacion,precio,moneda,ubicacion,barrio,latitud,longitud,superficie_total,superficie_cubierta,dormitorios,anunciante_nombre,anunciante_telefono,anunciante_whatsapp,url,imagen_principal,publicado_hace"
 
-    print("📥 Descargando propiedades de Argenprop desde Supabase...")
+    region = get_region()
+    ap_table = region.table
+    zp_table = region.zonaprop_table
+
+    print(f"📥 Descargando propiedades de Argenprop [{region.provincia}] ({ap_table}) desde Supabase...")
     ap_props = fetch_supabase_table(
-        "argenprop_propiedades", select=ap_cols, filter_params="activa=eq.true", max_total=limit_ap
+        ap_table, select=ap_cols, filter_params="activa=eq.true", max_total=limit_ap
     )
     print(f"  -> {len(ap_props)} propiedades obtenidas de Argenprop.")
 
-    print("📥 Descargando propiedades de Zonaprop desde Supabase...")
+    print(f"📥 Descargando propiedades de Zonaprop [{region.provincia}] ({zp_table}) desde Supabase...")
     zp_props = fetch_supabase_table(
-        "zonaprop_propiedades", select=zp_cols, filter_params="activa=eq.true"
+        zp_table, select=zp_cols, filter_params="activa=eq.true"
     )
     print(f"  -> {len(zp_props)} propiedades obtenidas de Zonaprop.")
 

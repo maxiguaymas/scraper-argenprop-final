@@ -13,6 +13,7 @@ class RegionConfig:
     provincia: str
     localidad: str
     table: str
+    zonaprop_table: str
     progress_type: str
     lock_type: str
     bands_cache_stem: str
@@ -25,7 +26,8 @@ REGIONS: dict[str, RegionConfig] = {
         loc="salta-arg",
         provincia="Salta",
         localidad="Salta",
-        table="argenprop_properties",
+        table="argenprop_propiedades",
+        zonaprop_table="zonaprop_propiedades",
         progress_type="argenprop_scrap_progress",
         lock_type="argenprop_scrap_lock",
         bands_cache_stem="price_bands_argenprop_salta_arg",
@@ -33,13 +35,14 @@ REGIONS: dict[str, RegionConfig] = {
     ),
     "jujuy": RegionConfig(
         key="jujuy",
-        loc="jujuy",
+        loc="jujuy-arg",
         provincia="Jujuy",
         localidad="Jujuy",
-        table="argenprop_properties_jujuy",
+        table="argenprop_propiedades_jujuy",
+        zonaprop_table="zonaprop_propiedades_jujuy",
         progress_type="argenprop_scrap_progress_jujuy",
         lock_type="argenprop_scrap_lock_jujuy",
-        bands_cache_stem="price_bands_argenprop_jujuy",
+        bands_cache_stem="price_bands_argenprop_jujuy_arg",
     ),
 }
 

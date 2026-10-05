@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 from typing import Any
+from src.argenprop.region import get_region
 
 
 def to_property_dict(prop: dict[str, Any], *, now: datetime | None = None) -> dict[str, Any]:
@@ -32,8 +33,8 @@ def to_property_dict(prop: dict[str, Any], *, now: datetime | None = None) -> di
         "direccion": prop.get("direccion"),
         "barrio": prop.get("barrio"),
         "ubicacion": prop.get("ubicacion"),
-        "localidad": prop.get("localidad") or "Salta",
-        "provincia": prop.get("provincia") or "Salta",
+        "localidad": prop.get("localidad") or get_region().localidad,
+        "provincia": prop.get("provincia") or get_region().provincia,
         "latitud": prop.get("latitud"),
         "longitud": prop.get("longitud"),
         "coordenadas_origen": prop.get("coordenadas_origen"),
@@ -167,8 +168,9 @@ def to_supabase_record(
 
     # Ubicación limpia
     ubicacion = prop.get("ubicacion")
+    reg = get_region()
     if not ubicacion:
-        parts = [prop.get("direccion"), prop.get("barrio"), prop.get("localidad") or "Salta"]
+        parts = [prop.get("direccion"), prop.get("barrio"), prop.get("localidad") or reg.localidad]
         ubicacion = ", ".join([p for p in parts if p])
 
     # Raw data & Tags
@@ -197,8 +199,8 @@ def to_supabase_record(
         "expensas": float(prop.get("expensas")) if prop.get("expensas") is not None else None,
         "ubicacion": ubicacion,
         "barrio": prop.get("barrio"),
-        "localidad": prop.get("localidad") or "Salta",
-        "provincia": prop.get("provincia") or "Salta",
+        "localidad": prop.get("localidad") or reg.localidad,
+        "provincia": prop.get("provincia") or reg.provincia,
         "latitud": lat,
         "longitud": lon,
         "coordenadas_origen": coord_orig if (coord_orig or (lat and lon)) else None,

@@ -378,6 +378,17 @@ class ApSession:
             resp = await self.session.get(url, headers=headers, allow_redirects=True)
             if resp.status_code == 200:
                 return resp.json()
+            if resp.status_code in (202, 403, 405):
+                logger.warning("Aviso WAF en API JSON (HTTP %s) — resolviendo token...", resp.status_code)
+                clear_cached_waf_token()
+                token, cookies_dict = await solve_waf_with_nodriver(f"{BASE}/")
+                if token and cookies_dict:
+                    for k, v in cookies_dict.items():
+                        self.session.cookies.set(k, v, domain=".argenprop.com")
+                    self.session.cookies.set("aws-waf-token", token, domain=".sosiva451.com")
+                    resp = await self.session.get(url, headers=headers, allow_redirects=True)
+                    if resp.status_code == 200:
+                        return resp.json()
         except Exception as exc:
             logger.debug("Error get_json %s: %s", url, exc)
         return None

@@ -324,20 +324,20 @@ def parse_listing_card(
         cm = _COCHERA_RE.search(text)
         cocheras = int(cm.group(1)) if cm else None
 
-    # Visualizaciones (puntos)
-    views = parse_ar_int(_bare(card, "puntos"))
-    if views is None:
+    # Puntos de destaque publicitario / posicionamiento (en Argenprop no existen visualizaciones reales)
+    puntos_destaque = parse_ar_int(_bare(card, "puntos"))
+    if puntos_destaque is None:
         pm_pts = _CARD_POINTS_RE.search(card)
         if pm_pts:
-            views = parse_ar_int(_strip(pm_pts.group(1)))
-    if views is None:
+            puntos_destaque = parse_ar_int(_strip(pm_pts.group(1)))
+    if puntos_destaque is None:
         vm = re.search(r"Visto\s+([\d.]+)", text, re.I)
         if vm:
-            views = parse_ar_int(vm.group(1))
+            puntos_destaque = parse_ar_int(vm.group(1))
 
     # Nivel destacado
     seg = _bare(card, "tiposegmento")
-    nivel_dest, es_super = classify_argenprop_destaque(seg, views, card)
+    nivel_dest, es_super = classify_argenprop_destaque(seg, puntos_destaque, card)
 
     # Título y Dirección
     titulo = None
@@ -424,7 +424,8 @@ def parse_listing_card(
         "pagina_origen": pagina_origen,
         "imagen_principal": imagen_principal,
         "imagenes": fotos,
-        "visualizaciones": views,
+        "puntos_destaque": puntos_destaque,
+        "visualizaciones": None,
         "estado": "activo",
         "raw_data": {"source": "argenprop_scraper", "card_text": text[:500]},
     }

@@ -47,7 +47,8 @@ def to_property_dict(prop: dict[str, Any], *, now: datetime | None = None) -> di
         "anunciante_cucis": prop.get("anunciante_cucis"),
         "anunciante_telefono": prop.get("anunciante_telefono"),
         "anunciante_whatsapp": prop.get("anunciante_whatsapp"),
-        "visualizaciones": prop.get("visualizaciones"),
+        "puntos_destaque": prop.get("puntos_destaque"),
+        "visualizaciones": None,
         "publicado_hace": prop.get("publicado_hace"),
         "fecha_publicacion": prop.get("fecha_publicacion"),
         "es_super_destacado": bool(
@@ -99,6 +100,7 @@ SUPABASE_COLUMNS = {
     "imagenes",
     "tags",
     "visualizaciones",
+    "puntos_destaque",
     "publicado_hace",
     "fecha_publicacion",
     "anunciante_nivel",
@@ -142,7 +144,7 @@ def to_supabase_record(
         price_m2 = round(price / sup_tot, 2)
 
     # Nivel de destaque
-    pts = prop.get("visualizaciones")
+    pts = prop.get("puntos_destaque") or prop.get("puntos") or prop.get("visualizaciones")
     es_super = bool(
         prop.get("es_super_destacado")
         or prop.get("nivel_destacado") == "super_destacado"
@@ -222,7 +224,8 @@ def to_supabase_record(
         "imagen_principal": prop.get("imagen_principal"),
         "imagenes": prop.get("imagenes") if isinstance(prop.get("imagenes"), list) else [],
         "tags": tags,
-        "visualizaciones": int(pts) if pts is not None else None,
+        "puntos_destaque": int(pts) if pts is not None else None,
+        "visualizaciones": None,
         "publicado_hace": prop.get("publicado_hace"),
         "fecha_publicacion": fecha_pub,
         "precio_m2": float(price_m2) if price_m2 is not None else None,
@@ -279,6 +282,7 @@ def to_supabase_record(
         "imagenes",
         "anunciante_cucis",
         "anunciante_logo",
+        "puntos_destaque",
         "visualizaciones",
         "fecha_publicacion",
         "publicado_hace",

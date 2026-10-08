@@ -72,6 +72,7 @@ class ArgenpropProperty(Base):
     anunciante_whatsapp: Mapped[str | None] = mapped_column(Text, nullable=True)
 
     visualizaciones: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    puntos_destaque: Mapped[int | None] = mapped_column(Integer, nullable=True)
     publicado_hace: Mapped[str | None] = mapped_column(Text, nullable=True)
     fecha_publicacion: Mapped[str | None] = mapped_column(Text, nullable=True)
 

@@ -336,17 +336,18 @@ def extract_fields_from_api_json(data: dict[str, Any]) -> dict[str, Any]:
         if imgs:
             fields["imagenes"] = imgs
 
-    # Puntos / visualizaciones
+    # Puntos de destaque publicitario oficial de Argenprop (no son visualizaciones reales)
     puntos = data.get("Puntos_i")
     if puntos is not None:
         try:
-            fields["visualizaciones"] = int(puntos)
+            fields["puntos_destaque"] = int(puntos)
         except (ValueError, TypeError):
             pass
+    fields["visualizaciones"] = None
 
     # Destaque según ID y puntos oficiales de Argenprop
     id_dest = data.get("IdTipoDestaque_i")
-    pts = fields.get("visualizaciones")
+    pts = fields.get("puntos_destaque")
     if id_dest in (1, 2) or (pts and pts >= 2000):
         fields["es_super_destacado"] = True
         fields["nivel_destacado"] = "super_destacado"
